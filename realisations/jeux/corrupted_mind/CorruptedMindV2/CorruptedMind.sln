@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorruptedMind.Plugins", "CorruptedMind.Plugins.csproj", "{84301DEB-6180-0FA1-5921-88BBCC1E996E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorruptedMind", "CorruptedMind.csproj", "{29E316BD-1B0D-789A-0654-30CB6EE7AFDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84301DEB-6180-0FA1-5921-88BBCC1E996E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84301DEB-6180-0FA1-5921-88BBCC1E996E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84301DEB-6180-0FA1-5921-88BBCC1E996E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84301DEB-6180-0FA1-5921-88BBCC1E996E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E316BD-1B0D-789A-0654-30CB6EE7AFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E316BD-1B0D-789A-0654-30CB6EE7AFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E316BD-1B0D-789A-0654-30CB6EE7AFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E316BD-1B0D-789A-0654-30CB6EE7AFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

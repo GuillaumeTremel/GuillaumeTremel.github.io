@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>Jeu du Pendu - Poudlard</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-2.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/script.js">
+	</script>
+</head>
+<body>
+	<div id="conteneur">
+		<div id="banniere">
+			<h1 id="logo"><a>Poudlard</a></h1>
+			
+			 <ul id="nav-utilitaire">
+				<li><a title="Se connecter  ">Se connecter  |</a></li>
+				<li><a title="S'inscrire ">S'inscrire  |</a></li>
+				<li><a title="English">English</a></li>
+			</ul>
+		</div>
+		
+		<ul id="nav-principale">
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Jeux en ligne</a></li>
+			<li><a>Jeux pour mobile</a></li>
+			<li><a>Lien Multi-joueurs</a></li>
+			<li><a>Mini-jeux</a></li>
+			<li><a id="actif">Jeux de lettres</a></li> 
+		</ul>
+		
+		<div id="cadre">
+			<div id="col-gauche">
+				<h3>Jeu du pendu</h3>
+				<ul>
+					<li><a>Anagrammes</a></li>
+					<li><a>Auteur de citations</a></li>
+					<li><a>Fubuki</a></li>
+					<li><a>Géographique</a></li>
+					<li><a id="actif">Jeu du Pendu</a></li>
+					<li><a>Kakuro</a></li>
+					<li><a>Mots codés</a></li>
+					<li><a>Mots coupés</a></li>
+					<li><a>Mots croisés</a></li>
+					<li><a>Mots mystères</a></li>
+					<li><a>Mots fléchés</a></li>
+					<li><a>Mots mélangés</a></li>
+					<li><a>Ronde des mots</a></li>
+					<li><a>Quiz</a></li>
+					<li><a>Sudoku</a></li>
+					<li><a>Takuzu</a></li>
+				</ul>
+			</div>
+			
+			<div id="col-droite">
+				<h2>Jeu du pendu</h2>
+			
+				<div id="zone-clavier-btn-indice">
+				
+					<h3>But du jeu :</h3>
+				
+					<p>Le jeu du pendu est un jeu consistant à trouver un mot secret <br /> en devinant quelles sont les lettres qui le composent</p>
+				
+					<h3>Règles du Jeu :</h3>
+				
+					<p> Le joueur clique sur une lettre,si la lettre fait partie du mot à trouver, elle s'affiche dans la zone prévue pour le mot secret.<br /> Mais, si la lettre ne fait pas partie du mot,un morceau de l'image du pendu (incluant la potence) s'affiche.<br /><br /><strong>Vous avez neuf images composant la potence et le pendu</strong></p>
+				
+					<table id="clavier">
+						<tr>
+							<td onclick ="choisir(this);">A</td>
+							<td onclick ="choisir(this);">B</td>
+							<td onclick ="choisir(this);">C</td>
+							<td onclick ="choisir(this);">D</td>
+							<td onclick ="choisir(this);">E</td>
+							<td onclick ="choisir(this);">F</td>
+							<td onclick ="choisir(this);">G</td>
+							<td onclick ="choisir(this);">H</td>
+							<td onclick ="choisir(this);">I</td>
+							<td onclick ="choisir(this);">J</td>
+							
+						</tr>
+						<tr>
+							<td onclick ="choisir(this);">K</td>
+							<td onclick ="choisir(this);">L</td>
+							<td onclick ="choisir(this);">M</td>
+							<td onclick ="choisir(this);">N</td>
+							<td onclick ="choisir(this);">O</td>
+							<td onclick ="choisir(this);">P</td>
+							<td onclick ="choisir(this);">Q</td>
+							<td onclick ="choisir(this);">R</td>
+							<td onclick ="choisir(this);">S</td>
+							<td onclick ="choisir(this);">T</td>
+							
+						</tr>
+						<tr>
+							<td onclick ="choisir(this);">U</td>
+							<td onclick ="choisir(this);">V</td>
+							<td onclick ="choisir(this);">W</td>
+							<td onclick ="choisir(this);">X</td>
+							<td onclick ="choisir(this);">Y</td>
+							<td onclick ="choisir(this);">Z</td>
+							<td onclick ="choisir(this);">-</td>
+							<td onclick ="choisir(this);"> </td>
+							
+						</tr>
+					</table>
+		
+					<div id="zone-boutons">
+						<p>
+							<img src="images/index-.png" alt="Recommencer" onmouseover="this.src='images/index.png'"onmouseout="this.src='images/index-.png'" onclick="recommencerJeu ()" />
+							<img src="images/indexindice.png" alt="Indice" onmouseover="this.src='images/indexindice2.png'"onmouseout="this.src='images/indexindice.png'"onclick="afficherIndice ()" />
+							<img src="images/indexcacherindice.png" alt="Cacher Indice" onmouseover="this.src='images/indexcacherindice2.png'"onmouseout="this.src='images/indexcacherindice.png'"onclick="cacherIndice ()" />
+						</p>
+					</div>
+		
+					<div id="zone-indice">&nbsp;</div>
+				</div>
+				
+				<div id="zone-pendu">
+					<img id="pendu" src="images/jeu-pendu/pendu-0.jpg" alt="pendu" />
+				</div>
+		
+				<div id="zone-message">&nbsp;</div>
+		
+				<p> Le mot secret a <script type="text/javascript">document.write(tailleMot);</script> caractères</p>
+		
+				<div id="zone-mot">
+						<script type =" text/javascript">
+							affLettres();
+						</script>
+				</div>
+				
+				<hr class="clearHR" />
+					
+			</div>
+		</div>	
+	
+		<div id="pied-page">
+			<ul id="nav-pied-page">
+				<li><a href="index.html">Accueil</a></li> 
+				<li><a>Jeux en ligne</a></li>
+				<li><a>Jeux pour mobile</a></li>
+				<li><a>Lien Multi-joueurs</a></li>
+				<li><a>Mini-jeux</a></li>
+				<li><a id="actif">Jeux de lettres</a></li> 
+			</ul>
+			<p>
+				&copy; 2015 Guillaume Tremel
+				<br />
+				Réalisé dans le cadre scolaire de première session au collégial.
+			</p>
+		</div>	
+	<div>
+</body>
+</html>

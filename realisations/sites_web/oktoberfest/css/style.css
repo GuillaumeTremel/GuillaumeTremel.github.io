@@ -1,0 +1,918 @@
+
+body{
+	width: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+h1 { 
+	font-family: Arvo, Arial;
+	color: #fff;
+	font-size: 55px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-family: Arvo, Arial;
+	color: #fff;
+	font-size: 40px;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+h3 {
+	position: relative;
+	font-family: Oswald, Arial;
+	color: #fff;
+	font-size: 26px;
+	font-weight: normal;
+	text-align: center;
+	/* z-index: 1; */
+
+}
+
+h4 {
+	font-family: Arvo, Arial;
+	color: #000;
+	font-size: 40px;
+	font-weight: normal;
+	text-align: center;
+	/* z-index: 1; */
+
+}
+
+h5 {
+	font-family: Arvo, Arial;
+	color: #fff;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+
+h6 {
+	position: relative;
+	font-family: Oswald, Arial;
+	color: #000;
+	font-size: 26px;
+	font-weight: normal;
+	text-align: center;
+	/* z-index: 1; */
+
+}
+/***************************** 
+	HEADER & NAVIGATION 
+******************************/
+header { 
+	position: fixed;
+	width: 100%;
+	margin-top: 0px;
+	z-index: 10;
+	background-color: #000;
+	opacity: 0.85;
+}
+
+.header-container {
+	position: relative;
+	margin: 0 auto;
+	height: 110px;
+	width: 98%;
+	 /* border: 1px solid white; */ /* test */
+}
+
+#logo2 {
+	float: left; /* meme chiffre que la hauteur du header-container */
+	font-family: Wellfleet, Arial;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+    padding-top: 5px;
+	padding-left: 5px;
+}
+
+#logo a {
+	float: left; /* meme chiffre que la hauteur du header-container */
+	font-family: Wellfleet, Arial;
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+	right: 50px;
+	padding-top:20px;
+	padding-left: 35px;
+	width: 35%;
+}
+
+
+#nav-princ {
+	float: right;
+	width: 44%;
+	padding-top: 20px;
+	
+}
+
+
+#nav-princ ul {
+	display: block;
+	list-style: none;
+	margin: 0;
+}
+
+
+#nav-princ li {
+	float: left;
+	padding-left: 30px;
+}
+
+
+
+#nav-princ li a  {
+	font-family: Wellfleet, Arial;
+	font-size: 16px;
+	color: #fff;
+	opacity: 0.6;
+	text-decoration: none;
+	outline: none;
+}
+
+
+#nav-princ li  a:hover{
+	color: #fff;
+	opacity: 1;
+
+
+}
+#nav-princ li a.active {
+	color: #fff;
+	opacity: 1;
+	border-bottom: 2px solid #fff;
+	
+}
+
+
+#Social_Media_Icons {
+	padding-top: 20px;
+	width: 100%;
+}
+
+
+/*************************** 
+	SECTION ACCUEIL  
+***************************/
+
+#accueil {
+	position: relative;
+	background-color: #f0b421;
+	color: #fff;
+	height: 575px;
+	margin: 0 auto;
+	padding: 200px 0;
+	 /* border: 3px solid yellow; */
+}
+
+
+#accueil h1 {
+	text-align: center;
+	/* background-color: red; */ /* aide */
+}
+
+#divider {
+	background: url(../images/divider.png) no-repeat;
+	width: 300px;
+	height: 35px;
+	margin: 0px auto 27px auto;
+}
+
+#divider2 {
+	background: url(../images/divider2.png) no-repeat;
+	width: 300px;
+	height: 35px;
+	margin: 0px auto 27px auto;
+}
+
+#divider3 {
+	background: url(../images/divider3.png) no-repeat;
+	width: 300px;
+	height: 35px;
+	margin: 0px auto 27px auto;
+}
+
+#divider4 {
+	background: url(../images/divider4.png) no-repeat;
+	width: 300px;
+	height: 35px;
+	margin: 0px auto 27px auto;
+}
+
+#divider5 {
+	background: url(../images/divider5.png) no-repeat;
+	width: 300px;
+	height: 35px;
+	margin: 0px auto 27px auto;
+}
+
+
+.select_box {
+	color: 000;
+	height: 30px;
+	width: 50px;
+}
+
+
+
+/*** Zone Diapo- Box Diapo ***/
+#zone-diapo {
+	text-align: center;
+	margin-right: 850px;
+	padding-top: 25px;
+}
+
+#box-diapo {
+	
+	position: relative;
+	height: 225px; 
+	width: 460px;
+	margin: 15px;
+	
+	display: inline-block;
+	overflow: hidden; 
+	
+}
+
+#box-diapo img {position: relative; }
+
+#box-diapo .legende-gauche, #box-diapo .legende-droite {
+	position: absolute;
+	height: 225px; 
+	width: 50px; 
+	background-color: rgba(0,0,0,0.5);  
+	display: block;
+	
+	color: #fff;
+	text-align: center;
+	line-height: 225px;  
+	font-size: 40px; 
+	
+	font-weight: bold; 
+	cursor: pointer;
+	z-index: 100;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out; 
+}
+
+#box-diapo .legende-gauche {
+	left: -50px; 
+	top: 0;
+}
+	
+#box-diapo .legende-droite {
+	right: -50px; 
+	top: 0;
+}
+
+#box-diapo .legende-gauche p, #box-diapo .legende-droite p {margin: 0;}
+
+#box-diapo:hover .legende-gauche {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+#box-diapo:hover .legende-droite {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+}	
+
+#mini-diapo img {
+	cursor: pointer;
+	border-radius: 7px;
+	margin: 3.5px;
+	display: inline-block;
+	transition: all 200ms ease-in 0s;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+}	
+
+/*******************************************/
+
+#zone-diapo2 {
+	text-align: center;
+}
+
+#box-diapo2 {
+	
+	position: relative;
+	height: 225px; 
+	width: 460px;
+	margin: 15px;
+	display: inline-block;
+	overflow: hidden; 
+	
+}
+
+#box-diapo2 img {position: relative; }
+
+#box-diapo2 .legende-gauche2, #box-diapo2 .legende-droite2 {
+	position: absolute;
+	height: 225px; 
+	width: 50px; 
+	background-color: rgba(0,0,0,0.5);  
+	display: block;
+	
+	color: #fff;
+	text-align: center;
+	line-height: 225px;  
+	font-size: 40px; 
+	
+	font-weight: bold; 
+	cursor: pointer;
+	z-index: 100;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out; 
+}
+
+#box-diapo2 .legende-gauche2 {
+	left: -50px; 
+	top: 0;
+}
+	
+#box-diapo2 .legende-droite2 {
+	right: -50px; 
+	top: 0;
+}
+
+#box-diapo2 .legende-gauche2 p, #box-diapo2 .legende-droite2 p {margin: 0;}
+
+#box-diapo2:hover .legende-gauche2 {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+#box-diapo2:hover .legende-droite2 {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+}	
+
+#mini-diapo2 i.left {
+	padding-left: 200px;
+	
+	
+}
+
+
+ /************** *********/
+ 
+#zone-diapo {
+	text-align: center;
+	
+}
+
+#box-diapo {
+	
+	position: relative;
+	height: 570px; 
+	width: 900px;
+	right: 10px;
+	margin: 15px;
+	display: inline-block;
+	overflow: hidden; 
+	border: 5px solid #fff;
+}
+
+#box-diapo img {position: relative; }
+
+#box-diapo .legende-gauche, #box-diapo .legende-droite {
+	position: absolute;
+	height: 570px; 
+	width: 50px; 
+	background-color: rgba(0,0,0,0.5);  
+	display: block;
+	
+	color: #fff;
+	text-align: center;
+	line-height: 570px;  
+	font-size: 40px; 
+	
+	font-weight: bold; 
+	cursor: pointer;
+	z-index: 100;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out; 
+}
+
+#box-diapo .legende-gauche {
+	left: -50px; 
+	top: 0;
+}
+	
+#box-diapo .legende-droite {
+	right: -50px; 
+	top: 0;
+}
+
+#box-diapo .legende-gauche p, #box-diapo .legende-droite p {margin: 0;}
+
+#box-diapo:hover .legende-gauche {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+#box-diapo:hover .legende-droite {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+}	
+
+#mini-diapo img {
+	cursor: pointer;
+	border-radius: 7px;
+	margin: 3.5px;
+	display: inline-block;
+	transition: all 200ms ease-in 0s;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	border: 5px solid #2E8B57;
+}	
+
+#mini-diapo img:hover {
+	z-index: 5;
+	
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+	
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+	border: 5px solid #000;
+}
+
+
+/******************************
+    SECTION DES SAISONS
+  prend la largeur de la page
+*******************************/
+
+ #content-printemps, #content-ete{
+	position: relative;
+	color: #fff;
+	height: 500px;
+	margin: 0 auto;
+	padding: 150px 0 300px 0;  /* a gauche et droite a 0 car prend toute la largeur */
+}
+
+#content-printemps {background-color: #9d1b1b; }
+#content-ete{background-color: #709933; }
+
+#content-automne {
+	background-color: #e67624; position: relative;
+	color: #000;
+	height: 700px;
+	margin: 0 auto;
+	padding: 150px 0 300px 0;  }
+
+#content-automne h3, #content-automne p {
+	color: #fff;
+	opacity: 1.0 !important;
+}
+
+#content-hiver {
+	background-color: #ecf0f1; /* blanc gris */ 
+	height: 600px;
+	padding: 200px;
+	color: #000;
+	margin: 0 auto;
+}
+
+
+/************************************ 
+	CONTENT / CONTENU DES SLIDES 
+	commun à toutes les saisons
+	contient les textes
+*************************************/
+.content{
+	position: relative;
+	margin: 0 auto;
+	width: 50%;
+	padding: 20px 30px;
+	 /* border: 1px solid red; */ 
+}
+
+
+.content h3 {
+	font-family: "Goudy Bookletter 1911", Arial;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: left;
+	margin: 40px 0;
+}
+
+#content-hiver img {margin-bottom: 20px; color: #000;}
+
+
+
+/******************************s
+    SECTION - ARTICLE - ASIDE
+*******************************/
+/* sélécteur d`élément enfant direct */
+section > article, section > aside {
+	display: inline-block;
+	vertical-align: top;
+}
+
+section > aside {
+	position: relative;
+	width: 300px;
+	padding: 0 10px;
+	/* border: 2px solid green; */
+	
+}
+
+ /* section > aside img { border: 1px solid white; } */
+
+ 
+section > article {
+	 width: 500px;
+	 text-align: justify;
+	 margin-left: 50px;
+	 /*  border: 2px solid brown; */ 
+ }
+
+/*********************************
+	PHOTOS ENTRE LES SAISONS
+*********************************/
+
+/* voir fichier .txt pour commentaire */
+
+.slide-photo{
+	position: relative;
+	/*width: 100%;
+	height: 100%;
+	min-height: 850px; pleine page */
+	
+	background-attachment: fixed;
+	height: 700px;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	/* 
+		1er outset ou inset (si non mentionné c'est outset par défaut)
+		2e décalage horizontal (x l'ombre se déplace vers la droite positif / gauche négatif), 
+		3e décalage vertical (y l'ombre se déplace vers le bas positif / haut négatif), 
+		4e force du dégradé (blur radius), 
+		5e la couleur 
+	*/
+	
+	box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+	
+}
+
+
+h1.slide-titre {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	display: block;
+	font-family: helvetica, arial;
+	font-size: 40px;
+	font-style: italic;
+	color: #fff;
+	text-shadow: 0 2px 0 #000, 0 0 10px silver;
+	/*text-shadow: 0 2px 0 #000, 0 0 10px #000; */
+}
+
+#slide-printemps h2{
+	position: absolute;
+	right: 175px;
+	top: 550px;
+	font-size: 25px;
+	padding: 15px;
+	color: #fff;
+	text-align: right;
+}
+
+
+
+#slide-ete h2, #slide-automne h2, #slide-hiver h2 {
+	position: absolute;
+	right: 40px;
+	top: 200px;
+	font-size: 35px;
+	background-color: rgba(51,51,51,0.3);
+	padding: 15px;
+	color: #ddd;
+	text-align: right;
+}
+
+
+
+#slide-printemps {
+	background: url(../images/paysages/Reykjavik.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+#slide-ete {
+	background: url(../images/paysages/Infos_Paysage.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+#slide-automne {
+	background: url(../images/paysages/Billeterie_Paysage.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+#slide-hiver {
+	background: url(../images/paysages/Partenaires_Paysage.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+/*********************************
+	Flèche prochaine diapositive
+*********************************/
+a.button{
+	position: absolute;
+	bottom: 0px;
+	left: 48.5%;
+	background-image: url(../images/arrow.png) ;
+	width: 50px;
+	height: 50px;
+	display: block;
+	background-color: rgba(203,203,203,0.3);
+	border-radius: 5px 5px 0 0; /* haut gauche haut droite bas droite bas gauche */
+	outline: none;
+	z-index: 5;
+} 
+
+
+a.button:hover{
+	cursor: pointer;
+	background-color: rgba(238,238,238,0.7);
+}
+
+
+/****************************** 
+	RETOUR AU HAUT DE PAGE 
+*******************************/
+
+#scroll-up a {
+	position: fixed;
+	bottom: 10px;
+	right: 2%;
+	height: 50px;
+	width: 50px;
+	background: url(../images/arrow-up.png) no-repeat;
+	text-indent: -999px;
+	background-color: rgba(203,203,203,0.3); /* bleu */
+	border-radius: 10px;
+	outline: none;
+	opacity: 0.6;
+	z-index: 40;
+}
+
+
+#scroll-up a:hover{
+	opacity: 1;
+	background-color: rgba(40,80,107,0.7);
+	
+	
+}
+
+/******************************** 
+	        FOOTER 
+*********************************/
+
+#copyright{
+	width: 100%;
+	background-color: #28506b;
+	font-family: Wellfleet, Arial;
+	color: #fff;
+	height: 200px;
+	padding-top: 50px;
+	text-align: center;
+	line-height: 0 ;
+}
+
+
+#copyright a{
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+	
+}
+
+#copyright h2{
+	text-decoration: none;
+	padding-top: 45px;
+	color: #fff;
+	outline: none;
+	
+}
+
+#copyright2{
+	border: 5px solid #ffffff;
+	height: 40px;
+	width: 750px;
+	cursor: default;
+	margin-left: 30%;
+}
+
+
+#Partenaires{
+	
+	background-color: #ffffff;
+	font-family: Wellfleet, Arial;
+	color: #fff
+	text-align: center;
+	line-height: 0 ;
+}
+
+
+#Partenaires a{
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+#form-contact2 {
+	margin-top: -185px;
+	margin-left: 1135px;
+	text-align: left;
+	
+}
+#courriel {
+	color: #28506b;
+}	
+
+#message {
+	color: #28506b;
+}	
+
+
+.button_submit {
+   border: 3px solid #ffffff;
+   background: #28506b;
+   background: -webkit-gradient(linear, left top, left bottom, from(#28506b), to(#28506b));
+   background: -webkit-linear-gradient(top, #28506b, #28506b);
+   background: -moz-linear-gradient(top, #28506b, #28506b);
+   background: -ms-linear-gradient(top, #28506b, #28506b);
+   background: -o-linear-gradient(top, #28506b, #28506b);
+   background-image: -ms-linear-gradient(top, #28506b 0%, #28506b 100%);
+   padding: 18px 18px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   
+   color: #ffffff;
+   font-size: 18px;
+   font-family: Wellfleet, Arial;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button_submit:hover {
+   border: 3px solid #ffffff;
+   background: #fff;
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   color: #28506b;
+   }
+.button_submit:active {
+    border: 3px solid #ffffff;
+   background: #fff;
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   color: #28506b;
+   }
+
+/************ À FAIRE SI LE TEMPS **************/
+
+/********************************************************
+	NAVIGATION À DROITE V (sous forme de ronds)  
+*********************************************************/
+
+#op-nav-vertical {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: auto;
+	height: 100%;
+	display: table;  /* comme le HTML */
+}
+
+#op-nav-vertical ul.op-section-list{
+	height: 100%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#op-nav-vertical li.op-v-item{display: block;}	
+
+#op-nav-vertical a.elem-link {display: block; margin: 12px 0;}
+
+#op-nav-vertical span.v-marker {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.6);  /* blanc */
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: -2px;
+	margin-right: 10px;
+}
+
+#op-nav-vertical a.elem-link:hover span.v-marker, 
+#op-nav-vertical  a.elem-link.active span.v-marker {
+	background-color: rgba(255,255,255,1);
+	
+}
+
+#op-nav-vertical .op-v-item-desc{
+	display: inline-block;
+	font-size: 14px;
+	position: absolute;
+	
+	
+	
+	white-space: nowrap;
+	line-height: normal;
+	padding: 0 34px 0 0;
+	vertical-align: middle;
+}
+
+#op-nav-vertical .op-v-item-desc .op-v-item-bg {
+	display: inline-block;
+	background-color: rgba(40,80,107,.5);
+	color: #fff;
+	padding: 4px 10px 6px 10px;
+	border: 1px solid rgba(160,160,160,0.2);
+	border-radius: 4px;
+}
+
+#op-nav-vertical .elem-link:hover .op-v-item-desc{right: 0px;}
+
+/* infobulle */
+/*
+	est utilisée pour décrire comment sont gérés les espaces et les retours à la ligne à l'intérieur d'un élément, ainsi que la justification automatique.
+	nowrap : Fusionne les espaces comme normal, mais n'ajoute pas de rupture de ligne automatique (justification automatique).
+	*/
+
+/*********** LES CLASSES ******************/
+.center {text-align: center;}
+
+.right {padding-right: 400px;}
+
+.left {padding-left: 300px;}
+.left2 {
+padding-left: 500px;
+padding-top: 10px;
+}

@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>CRAZY QUIZ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-1.css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/script.js">
+	</script>
+</head>
+
+<body onload="initialiserQuiz()">
+<div id="conteneur">  
+	<header>
+		<img src="images/logo.png" width="350" height="300" alt=""/>
+	
+	</header>
+	
+	<nav id="nav-principale" >
+	
+		<ul>
+			<li><a href="#" >Accueil</a></li> 
+			<li><a href="#">BD</a></li>
+			<li><a href="#">Films &amp; Séries</a></li>
+			<li><a href="#">Jeux &amp; Consoles</a></li>
+			<li><a href="#" id="actif">Monuments*</a></li>
+			<li><a href="#">Ponts</a></li>
+			<li><a href="#">Sport</a></li>
+		</ul>	
+	</nav>
+	
+	<div id="contenu">
+		<h2>Quiz sur les monuments célèbres</h2>
+
+		<div id="formulaire" onsubmit="return validerQuiz()">
+			
+			<form id="form1">
+				<p id="section-nom">Nom : <input type="text" id="nom" name="nom" /></p>
+					<!-- code pour le message d'erreur dynamique -->
+				<p id="erreurNom" class="erreur"><!-- texte dynamique --></p>
+				
+				<ol class="question"> 
+					<li id="quest1" class="floatstop"> 					
+						<div class="img-droite"><img src="images/buckinghampalace.jpg" width="300" height="133" alt="Inconnu" class="ImgAgrandissement" />
+						</div>
+						<p>Qu'elle est la résidence officielle des souverains britanniques?</p>
+						
+						<ol class="choix">
+							<li id="a1" onmouseover ="afficherSurvol('a1')" onmouseout="cacherSurvol('a1')"><input name="q1" id="q1a" type="radio" value="a" onclick="tabRepUtil[1]='a'" /> <label for="q1a"><span id="span-a1">Palais de Westminster</span></label></li>
+							<li id="b1" onmouseover ="afficherSurvol('b1')" onmouseout="cacherSurvol('b1')"><input name="q1" id="q1b" type="radio" value="b" onclick="tabRepUtil[1]='b'" /> <label for="q1b"><span id="span-b1">Palais de Buckingham</span></label></li>
+							<li id="c1" onmouseover ="afficherSurvol('c1')" onmouseout="cacherSurvol('c1')"><input name="q1" id="q1c" type="radio" value="c" onclick="tabRepUtil[1]='c'" /> <label for="q1c"><span id="span-c1">Big Ben</span></label></li>
+						</ol> <!-- fin choix -->
+						
+					<p id="erreurQuest1" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest2" class="floatstop"> 
+						<div class="img-droite"><img src="images/maisonblanche.jpg" width="300" height="133" alt="Inconnu"  class="ImgAgrandissement" />
+						</div>
+						<p>Qu'elle est la résidence officielle et le bureau du président des États-Unis?</p>
+						
+						<ol class="choix">
+							<li id="a2" onmouseover ="afficherSurvol('a2')" onmouseout="cacherSurvol('a2')"><input name="q2" id="q2a" type="radio" value="a" onclick="tabRepUtil[2]='a'" /> <label for="q2a"><span id="span-a2">La Maison Blanche</span></label></li>
+							<li id="b2" onmouseover ="afficherSurvol('b2')" onmouseout="cacherSurvol('b2')"><input name="q2" id="q2b" type="radio" value="b" onclick="tabRepUtil[2]='b'" /> <label for="q2b"><span id="span-b2">Le Vatican</span></label></li>
+						</ol> <!-- fin choix -->
+					
+						<p id="erreurQuest2" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest3" class="floatstop"> 
+						<div class="img-droite"><img src="images/statuedelaliberté.jpg" alt="Inconnu"  class="ImgAgrandissement" />
+						</div>
+						<p>Quel est le monument qui représente le symbole des États-Unis?</p>
+						
+						<ol class="choix">
+							<li id="a3" onmouseover ="afficherSurvol('a3')" onmouseout="cacherSurvol('a3')"><input name="q3" id="q3a" type="radio" value="a" onclick="tabRepUtil[3]='a'" /> <label for="q3a"><span id="span-a3">Central Park</span></label></li>
+							<li id="b3" onmouseover ="afficherSurvol('b3')" onmouseout="cacherSurvol('b3')"><input name="q3" id="q3b" type="radio" value="b" onclick="tabRepUtil[3]='b'" /> <label for="q3b"><span id="span-b3">L'Empire States Building</span></label></li>
+							<li id="c3" onmouseover ="afficherSurvol('c3')" onmouseout="cacherSurvol('c3')"><input name="q3" id="q3c" type="radio" value="c" onclick="tabRepUtil[3]='c'" /> <label for="q3c"><span id="span-c3">Time Square</span></label></li>
+							<li id="d3" onmouseover ="afficherSurvol('d3')" onmouseout="cacherSurvol('d3')"><input name="q3" id="q3d" type="radio" value="d" onclick="tabRepUtil[3]='d'" /> <label for="q3d"><span id="span-d3">La Statue de la Liberté</span></label></li>
+						</ol> <!-- fin choix -->
+					
+						<p id="erreurQuest3" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest4" class="floatstop"> 					<!--class pour img à changer -->
+						<div class="img-droite"><img src="images/BigBen.jpg" alt="Inconnu" width="164" height="352" class="ImgAgrandissement" />
+						</div>
+						<p>Quel est le monument qui est le siège du parlement britannique ?</p>
+						
+						<ol class="choix">
+							<li id="a4" onmouseover ="afficherSurvol('a4')" onmouseout="cacherSurvol('a4')"><input name="q4" id="q4a" type="radio" value="a" onclick="tabRepUtil[4]='a'" /> <label for="q4a"><span id="span-a4">Big Ben</span></label></li>
+							<li id="b4" onmouseover ="afficherSurvol('b4')" onmouseout="cacherSurvol('b4')"><input name="q4" id="q4b" type="radio" value="b" onclick="tabRepUtil[4]='b'" /> <label for="q4b"><span id="span-b4">Madame Tussauds London</span></label></li>
+							<li id="c4" onmouseover ="afficherSurvol('c4')" onmouseout="cacherSurvol('c4')"><input name="q4" id="q4c" type="radio" value="c" onclick="tabRepUtil[4]='c'" /> <label for="q4c"><span id="span-c4">La Cathédrale Saint-Paul de Londres</span></label></li>
+							<li id="d4" onmouseover ="afficherSurvol('d4')" onmouseout="cacherSurvol('d4')"><input name="q4" id="q4d" type="radio" value="d" onclick="tabRepUtil[4]='d'" /> <label for="q4d"><span id="span-d4">Tower Bridge</span></label></li>
+						</ol> <!-- fin choix -->
+						
+					<p id="erreurQuest4" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest5" class="floatstop"> 					
+						<div class="img-droite"><img src="images/TourDePise.jpg" alt="Inconnu"  class="ImgAgrandissement" />
+						</div>
+						<p>Quel est le monument dont la construction débuta en 1173 en Italie?</p>
+						
+						<ol class="choix">
+							<li id="a5" onmouseover ="afficherSurvol('a5')" onmouseout="cacherSurvol('a5')"><input name="q5" id="q5a" type="radio" value="a" onclick="tabRepUtil[5]='a'" /> <label for="q5a"><span id="span-a5">La Basilique Saint-Pierre</span></label></li>
+							<li id="b5" onmouseover ="afficherSurvol('b5')" onmouseout="cacherSurvol('b5')"><input name="q5" id="q5b" type="radio" value="b" onclick="tabRepUtil[5]='b'" /> <label for="q5b"><span id="span-b5">La Tour de Pise</span></label></li>
+							<li id="c5" onmouseover ="afficherSurvol('c5')" onmouseout="cacherSurvol('c5')"><input name="q5" id="q5c" type="radio" value="c" onclick="tabRepUtil[5]='c'" /> <label for="q5c"><span id="span-c5">Le Panthéon</span></label></li>
+						</ol> <!-- fin choix -->
+						
+					<p id="erreurQuest5" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest6" class="floatstop"> 					
+						<div class="img-droite"><img src="images/Colisee.jpg" alt="Inconnu"  class="ImgAgrandissement" />
+						</div>
+						<p>Quel est le monument situé dans le centre de la ville de Rome?</p>
+						
+						<ol class="choix">
+							<li id="a6" onmouseover ="afficherSurvol('a6')" onmouseout="cacherSurvol('a6')"><input name="q6" id="q6a" type="radio" value="a" onclick="tabRepUtil[6]='a'" /> <label for="q6a"><span id="span-a6">Mont Palatin</span></label></li>
+							<li id="b6" onmouseover ="afficherSurvol('b6')" onmouseout="cacherSurvol('b6')"><input name="q6" id="q6b" type="radio" value="b" onclick="tabRepUtil[6]='b'" /> <label for="q6b"><span id="span-b6">Le Colysée</span></label></li>
+						</ol> <!-- fin choix -->
+						
+					<p id="erreurQuest6" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest7" class="floatstop"> 				
+						<div class="img-droite"><img src="images/spaceneedle.jpg" alt="Inconnu"  class="ImgAgrandissement" />
+						</div>
+						<p>Quel est le monument construit à Seattle en 1962?</p>
+						
+						<ol class="choix">
+							<li id="a7" onmouseover ="afficherSurvol('a7')" onmouseout="cacherSurvol('a7')"><input name="q7" id="q7a" type="radio" value="a" onclick="tabRepUtil[7]='a'" /> <label for="q7a"><span id="span-a7">Waterfront Park</span></label></li>
+							<li id="b7" onmouseover ="afficherSurvol('b7')" onmouseout="cacherSurvol('b7')"><input name="q7" id="q7b" type="radio" value="b" onclick="tabRepUtil[7]='b'" /> <label for="q7b"><span id="span-b7">La Tour Eiffel</span></label></li>
+							<li id="c7" onmouseover ="afficherSurvol('c7')" onmouseout="cacherSurvol('c7')"><input name="q7" id="q7c" type="radio" value="c" onclick="tabRepUtil[7]='c'" /> <label for="q7c"><span id="span-c7">Space Needle</span></label></li>
+							<li id="d7" onmouseover ="afficherSurvol('d7')" onmouseout="cacherSurvol('d7')"><input name="q7" id="q7d" type="radio" value="d" onclick="tabRepUtil[7]='d'" /> <label for="q7d"><span id="span-d7">Pacific Science Center</span></label></li>
+						</ol> <!-- fin choix -->
+						
+					<p id="erreurQuest7" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest8" class="floatstop"> 					
+						<div class="img-droite"><img src="images/TourEiffel.jpg" alt="Inconnu"  class="ImgAgrandissement" />
+						</div>
+						<p>Quel était le monument le plus élevé du monde pendant 41 ans?</p>
+						
+						<ol class="choix">
+							<li id="a8" onmouseover ="afficherSurvol('a8')" onmouseout="cacherSurvol('a8')"><input name="q8" id="q8a" type="radio" value="a" onclick="tabRepUtil[8]='a'" /> <label for="q8a"><span id="span-a8">Atomium</span></label></li>
+							<li id="b8" onmouseover ="afficherSurvol('b8')" onmouseout="cacherSurvol('b8')"><input name="q8" id="q8b" type="radio" value="b" onclick="tabRepUtil[8]='b'" /> <label for="q8b"><span id="span-b8">La Statue de la liberté</span></label></li>
+							<li id="c8" onmouseover ="afficherSurvol('c8')" onmouseout="cacherSurvol('c8')"><input name="q8" id="q8c" type="radio" value="c" onclick="tabRepUtil[8]='c'" /> <label for="q8c"><span id="span-c8">Space Needle</span></label></li>
+							<li id="d8" onmouseover ="afficherSurvol('d8')" onmouseout="cacherSurvol('d8')"><input name="q8" id="q8d" type="radio" value="d" onclick="tabRepUtil[8]='d'" /> <label for="q8d"><span id="span-d8">La Tour Eiffel</span></label></li>
+						</ol> <!-- fin choix -->
+						
+					<p id="erreurQuest8" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest9" class="floatstop"> 					
+						<div class="img-droite"><img src="images/citeinterdite.JPG"  alt="Inconnu" class="ImgAgrandissement" />
+						</div>
+						<p>Quel est le monument appelé par les chinois le Palais ancien?</p>
+						
+						<ol class="choix">
+							<li id="a9" onmouseover ="afficherSurvol('a9')" onmouseout="cacherSurvol('a9')"><input name="q9" id="q9a" type="radio" value="a" onclick="tabRepUtil[9]='a'" /> <label for="q9a"><span id="span-a9">Le Temple de Yonghe</span></label></li>
+							<li id="b9" onmouseover ="afficherSurvol('b9')" onmouseout="cacherSurvol('b9')"><input name="q9" id="q9b" type="radio" value="b" onclick="tabRepUtil[9]='b'" /> <label for="q9b"><span id="span-b9">Le Temple du ciel</span></label></li>
+							<li id="c9" onmouseover ="afficherSurvol('c9')" onmouseout="cacherSurvol('c9')"><input name="q9" id="q9c" type="radio" value="c" onclick="tabRepUtil[9]='c'" /> <label for="q9c"><span id="span-c9">La Cité interdite </span></label></li>
+						</ol> <!-- fin choix -->
+						
+					<p id="erreurQuest9" class="erreur"><!--affichage dynamique --></p>
+					</li>
+					
+					<li id="quest10" class="floatstop"> 					
+						<div class="img-droite"><img src="images/moai.jpg" alt="Inconnu"  class="ImgAgrandissement" />
+						</div>
+						<p>Quels sont les monuments représentant l’île de Pâques?</p>
+						
+						<ol class="choix">
+							<li id="a10" onmouseover ="afficherSurvol('a10')" onmouseout="cacherSurvol('a10')"><input name="q10" id="q10a" type="radio" value="a" onclick="tabRepUtil[10]='a'" /> <label for="q10a"><span id="span-a10">Les moaï</span></label></li>
+							<li id="b10" onmouseover ="afficherSurvol('b10')" onmouseout="cacherSurvol('b10')"><input name="q10" id="q10b" type="radio" value="b" onclick="tabRepUtil[10]='b'" /> <label for="q10b"><span id="span-b10">les Haumaka</span></label></li>
+						</ol> <!-- fin choix -->
+						
+					<p id="erreurQuest10" class="erreur"><!--affichage dynamique --></p>
+					</li>
+				</ol> <!-- fin ol question -->
+			
+			<span id="resultat"></span><br /><span id="message"></span>
+			
+				<p class="floatstop">
+					<input id="btnCorriger" class="bouton" type="submit" value="Corriger" />
+								
+					<input id="btnEffacer" class="bouton" type="reset" value="Effacer" />
+					<input id="btnEnvoyer" class="bouton" type="button" value="Envoyer" onclick="window.location.href= 'resultats.html'" />
+				</p>
+			
+		
+			</form>
+		</div> <!-- fin formulaire -->
+	</div> <!-- fin contenu -->
+	
+	<footer>
+		<p id="copyright">
+				&copy; 2016 Tremel Guillaume
+				<br />
+				
+				Réalisé dans le cadre scolaire de deuxième session au collégial
+		</p>		
+	</footer>
+</div> <!-- fin conteneur -->
+</body>
+</html>

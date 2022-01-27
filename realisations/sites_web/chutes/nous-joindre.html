@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nous joindre - Chutes d'eau et cascades sur Chutes en tout genres</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-2.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body initForm()>
+<div id="conteneur">
+	<div id="entete">
+		<h1 id="logo"><a href="index.html" id="actif">Chutes en tout genres</a></h1>
+		<script type="text/javascript">
+			affBanniere();
+		</script> 
+	</div>
+	
+	<ul id="nav-principale">
+		<li><a href="index.html">Accueil*</a></li> 
+		<li><a href="belles-chutes.html">Les plus belles*</a></li>
+		<li><a href="#">Les plus hautes</a></li>
+		<li><a href="chutes-travers-monde.html">À travers le monde*</a></li>
+		<li><a href="#">Nous joindre</a></li>
+	</ul>
+	
+	<div id="contenu">
+		<div id="form-contact">
+			<form id="form1" action="mailto:guiguitre@hotmail.com" onsubmit="return validerForm()" method="post" enctype="text/plain" >
+			
+				<p id="remarque">Les champs indiqués d’un ( * ) sont obligatoires.</p>
+					 
+				<fieldset id="infos">
+					<legend>Informations personnelles</legend>
+				
+					<p id="civilite">
+						<label><strong>Civilité : </strong></label>
+					
+						<span id="civilite-ligne">
+							<label for="m">M</label>
+							<input id="m" name="civilite" type="radio" value="M." checked="checked" />
+													
+							<label for="mme">Mme</label>
+							<input id="mme" name="civilite" type="radio" value="Mme"  />
+						</span>	
+					</p>
+					
+					<p id="erreurCivilite" class="erreur"></p>
+					
+					<p>
+						<label for="nom"><strong>* Nom : </strong></label>
+						<input id="nom" name="nom"  type="text" size="30" />
+					</p>
+					
+					<p id="erreurNom" class="erreur"></p>
+					
+					<p>
+						<label for="ville"><strong>* Ville : </strong></label>
+						<input id="ville" name="ville" type="text" size="30"  />
+					</p>
+					
+					<p id="erreurVille" class="erreur"></p>
+
+					<p>
+						<label for="courriel"><strong>* Courriel : </strong></label>
+						<input id="courriel" name="courriel" type="text" size="30"  />
+					</p>
+					
+					<p id="erreurCourriel" class="erreur"></p>
+				
+				
+				</fieldset>	
+			
+				<fieldset>
+					<p>
+						<label for="sujet"><strong> * Sujet : </strong></label>
+						<input id="sujet" name="sujet" type="text" size="30" value="" />
+					</p>
+					
+					<p id="erreurSujet" class="erreur"></p>
+					
+					
+					<p id="zone-message">
+						<label for="message"><strong>* Message : </strong></label>
+						<textarea id="message" name="message" cols="32" rows="5"></textarea>
+					</p>
+					
+					<p id="erreurMessage" class="erreur"></p>	
+
+				</fieldset>
+			
+				<p id="btnSubmit">
+					<input id="submit" type="submit" value="Envoyer" />
+				</p>
+			</form>
+					
+		</div>	
+	</div>	
+					
+	<div id="pied-page">
+		<ul id="nav-pied-page">
+			<li><a href="#">Accueil</a></li> 
+			<li><a href="#">Les plus belles</a></li>
+			<li><a href="#">Les plus hautes</a></li>
+			<li><a href="#">À travers le monde</a></li>
+			<li><a href="#">Nous joindre</a></li>
+		</ul>
+		<p>
+			&copy; 2015  <a href="mailto:guiguitre@hotmail.com">Guillaume Tremel</a><br />
+			Réalisé dans le cadre scolaire de première session au collégial.
+		</p>
+	</div>
+</div>
+
+</body>
+</html>	
+	

@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Car2DExample",
+"dataUrl": "tremelg_payetb_efc_application.data.unityweb",
+"asmCodeUrl": "tremelg_payetb_efc_application.asm.code.unityweb",
+"asmMemoryUrl": "tremelg_payetb_efc_application.asm.memory.unityweb",
+"asmFrameworkUrl": "tremelg_payetb_efc_application.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

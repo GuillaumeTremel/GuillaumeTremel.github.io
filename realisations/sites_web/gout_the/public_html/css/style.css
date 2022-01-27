@@ -1,0 +1,281 @@
+body{
+    max-width: 1080px; 
+    max-height: 1920px; 
+    background-color: #E8DADB;
+
+}
+
+h2 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 150px ;
+    text-align: center;
+    color: #154F89;
+}
+
+h3 {
+
+    font-size: 60px ;
+    text-align: center;
+    font-family: 'Josefin Slab', serif; 
+    color: #154F89;
+
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+ul{
+    text-align: center;
+
+
+}
+
+a {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+li{
+
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px;
+    vertical-align: top;
+    text-align: center;
+
+}
+
+
+
+
+/*****HEADER*****/ 
+
+header{
+    position: relative;
+    margin: 0;
+    block-size: 250px;
+ 
+
+}
+
+header h1 {
+    display: none;
+}
+
+header img{width: 100%; border: none; display: block;}
+
+
+/*****FIN HEADER******/
+
+
+
+/*******SECTION BIENVENUE******/
+
+section {
+
+    position: relative;
+    margin: 0;
+  block-size: 1500px;
+
+}
+
+/*******SECTION BIENVENUE******/
+
+
+
+
+
+/****Footer****/
+
+#copyright{
+    width: 100%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    color: #fff;
+    height: 10px;
+    text-align: center;
+    line-height: 60px;
+}
+
+
+/***Fin footer****/
+
+
+/****Effet bouton****/
+
+@keyframes electronic {
+
+    0%, 100% {
+        background-position: 20px -30px;
+    }
+    25% {
+        background-position: 150px 5px;
+    }
+    50% {
+        background-position: 20px 40px;
+    }
+    75% {
+        background-position: -100px 5px;
+    }
+
+}
+
+.bouton {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background-color: #7F2769;
+    color: #E8DADB;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 52px;
+}
+.bouton:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    transform: scale( 1.02, 1.08 );
+    position: absolute;
+    background: #f00;
+    background-position: 55px 0;
+    top: 0;
+    animation: linear 1s infinite linear;
+    left: 0;
+    z-index: -1;
+}
+
+.bouton:before {
+    background: radial-gradient( #7C6859, #7C6859, #7C6859, #7C6859, #D5B394, #D5B394 ) no-repeat;
+    background-size: 200px 100px;
+    animation: electronic 2s infinite linear;
+}
+
+
+
+
+/*****Fin effet bouton ****/
+
+
+/*******CLASSE*******/
+
+
+.mooth {
+    text-align: center;
+
+}
+
+
+.note {
+    text-align: center;
+
+
+
+}
+
+
+
+.ingredient {
+
+    width: 200px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+    position: relative;
+    background-color: #7F2769;
+    font-family: 'Josefin Slab', serif; 
+    font-size: 30px;
+    color: #E8DADB;
+
+}
+
+.commande {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    background-color: #6D843A;
+    color: #E8DADB;
+    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+
+
+}
+
+.autre {
+
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    background-color: #4A5427;
+    color: #E8DADB;
+    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+
+}
+
+
+#divider {
+    background: url(../images/divider.png) no-repeat;
+    width: 450px;
+    height: 53px;
+    margin: 0px auto 10px auto;
+}
+
+#divider2 {
+    background: url(../images/divider2.png) no-repeat;
+    width: 450px;
+    height: 53px;
+    margin: 0px auto 10px auto;
+}
+
+#remerciement {
+   
+    font-size: 100px;
+    color: #7F2769;
+    text-align: center;
+   margin-top: 500px;
+}
+
+
+
+
+
+
+.icon {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  display: inline-block;
+
+  border: 5px solid rgba(255,255,255,0.3);;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+
+.paiement {
+    height: 400px;
+    
+    
+}
+
+
+/********FIN_CLASSE*******/

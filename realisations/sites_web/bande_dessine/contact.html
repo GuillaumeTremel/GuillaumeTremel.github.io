@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Full BD Alchimie</title>
+    <meta charset="utf-8" />   
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-2.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-kl.css" />
+	
+	<link rel="icon type=image/png" href="favicon-32x32.png" sizes="32x32" >
+	<link rel="icon type=image/png" href="favicon-194x194.png" sizes="194x194">
+	<link rel="icon type=image/png" href="favicon-96x96.png" sizes="96x96" >
+	<link rel="icon type=image/png" href="favicon-16x16.png" sizes="16x16" >
+	
+	<script src="js/jquery-2.2.3.js"></script>
+	<script src="js/menu-script.js"></script>
+	<script>
+		$(document).ready(function () {
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
+
+		});
+	</script>
+	<script type="text/javascript"> 
+		var nbreCaptcha = 2;
+		
+		var txtCaptcha = "";
+		
+		var tabTxtCaptcha = new Array();
+		tabTxtCaptcha[1] = "q2w4e6r8"
+		tabTxtCaptcha[2] = "9s3d5f7"
+		tabTxtCaptcha[3] = "nb5eo86"
+		tabTxtCaptcha[4] = "uvxhf7"
+		tabTxtCaptcha[5] = "zs5gp2"
+		
+		var nbrePrecedent = "";
+		
+		
+		function initialiserForm()
+		{
+			document.getElementById("formContact").reset();
+		}
+		
+		function afficherCaptcha()
+		{
+			var nbreAleatoire = Math.floor((Math.random() * nbreCaptcha) + 1);
+			
+			while (nbrePrecedent == nbreAleatoire)
+			{
+				nbreAleatoire = Math.floor((Math.random() * nbreCaptcha) + 1);
+			}
+			
+			nbrePrecedent = nbreAleatoire;
+			
+			txtCaptcha = tabTxtCaptcha[nbreAleatoire];
+			
+			// aff captcha
+			document.getElementById("img-captcha").innerHTML = '<img id="image_captcha" alt="' + txtCaptcha + '" src="images/captcha/captcha' + nbreAleatoire + '.jpg" />'
+		}
+		
+		function verifierCaptcha(objet)
+		{
+			if (objet.value != txtCaptcha)
+			{
+				objet.setCustomValidity("Le texte ne coresspond pas au texte de l'image");
+			}
+			else
+			{
+				objet.setCustomValidity("");
+			}
+		}
+		
+		function envoyer()
+		{
+			document.getElementById("formContact").action = "mailto:billettec@cgmatane.qc.ca?cc:kevin.dude@cgocable.ca guiguitre@hotmail.com&amp;subject" + sujet;
+			
+			document.getElementById("confirm-envoi").innerHTML = "OK";
+			
+			setTimeout("initialiserForm()", 1000);
+			
+		}
+		
+		function verifierCourriel(input)
+		{
+			if(input.value != document.getElementById("courriel").value)
+			{
+				input.setCustomValidity("les deux courriels ne coresspondent pas");
+			}
+			else
+			{
+				input.setCustomValidity("");
+			}
+		}
+		
+	</script> 
+	
+	<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" >
+</head>
+<body onload="initialiserForm(), afficherCaptcha()">
+<div id="container">
+	<header>
+	<div id="banniere">
+		<h1 id="logo"><a href="index.html">Bande Dessinés</a></h1>
+			
+		 <ul id="nav-utilitaire">
+			<li><img src="images/facebook.png" alt="facebook" /></li>
+			<li><img src="images/twitter.png" alt="twitter" /></li>
+			<li><a title="FAQ">FAQ  |</a></li>
+			<li><a title="English">English</a></li>
+		</ul>
+		<form id="recherche" method="get" action="#">
+			<table>
+				<tr>
+					<td style="border-style:solid none solid solid;border-color:#4B7B9F;border-width:1px;">
+					<input type="text" name="zoom_query" style="border:0px solid; height:17px; padding:0; position:relative;" placeholder="Rechercher">
+					</td>
+					<td style="border-style:solid;border-color:#4B7B9F;border-width:1px;">
+					<input type="submit" value="" style="border-style: none; background: url('images/spotlight.jpg') no-repeat; width: 20px; height: 20px;">
+					</td>
+				</tr>
+			</table>
+		</form> 
+	</div>		
+	</header>
+
+	<nav id="nav-principale">
+		<ul>
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Histoire</a></li>
+			<li><a href="giffen-oeuvres.html">Auteurs</a></li>
+			<li><a href="bandes-dessinees.html">Bandes Dessinés</a></li>
+			<li><a href="personnages.html">Personnages</a></li>
+			<li><a href="manga-hxh.html">Manga</a></li>
+			<li><a href="#" id="actif">Contact</a></li> 
+		</ul>
+	</nav>
+	
+	
+	
+	<div id="contenu">
+		<form id="formContact" onsubmit="return envoyer()" method="post" enctype="text/plain">
+		<p id="legende">Les champs indiqués avec un astérisque(*) sont obligatoires.</p>
+		
+		<p id="confirm-envoi">&nbsp;</p>
+		
+		<p><label>* Nom</label> <input type="text" id="nom" name="nom" required autofocus pattern="^([A-ZÉÊÈËÎÏ]('[A-Z])?[a-zéêèëîïôç]+( |\-)?)+$" title="Anne Stephanie Labrun ou Jean Michel Simard" /></p>
+		
+		<p><label>Ville</label> <input type="text" id="ville" name="ville" pattern="^[A-Z][a-z]+$" title="Matane" /></p>
+		
+		<p><label>*Courriel</label> <input type="email" id="courriel" name="courriel" pattern="^[a-z]+[\w\.]+@[a-z]+\.[a-z]{2,3}$" title="Courriel" placeholder="login@domaine.com" /></p>
+
+		<p><label>*Confirm courriel</label> <input type="email" id="confirm" name="confirm" oninput="verifierCourriel(this)" maxlength="7" pattern="^[a-z]+[\w\.]+@[a-z]+\.[a-z]{2,3}$" title="Courriel" /></p>
+		<!-- doit obligatoirement commencer par http:// -->
+		<!-- À CHANGER : type -->
+		<p><label>*Sujet</label> <input type="text" id="sujet" name="sujet" placeholder="Sujet" /></p>
+		
+		<p id="zone-message">
+			<label>* Message</label><textarea id="message" cols="30" rows="5" required /></textarea>
+		</p>
+		
+		<p id="img-captcha" class="img-captcha"><!-- aff dynamique --></p>
+		
+		<p class="img-captcha"><a href="javascript:afficherCaptcha()">Illisible, changer image</a></p>
+		                
+        <p>
+            <label>* Entrez les caractères de l'image</label>
+			<!-- oninput événement HTML5, qui se déclenche lorsque l'utilisateur s'engage avec un champ de saisie. -->
+            <input type="text" id="texte-captcha" size="10" maxlength="8" required oninput="verifierCaptcha(this)" />
+        </p>
+			
+		<p id="checkbox">
+			<input type="checkbox" name="checkbox" id="checkbox" value="Je veux être informé sur les bandes dessinées." />
+			<label for="checkbox">Je veux être informé sur les bandes dessinées.</label>
+		</p>
+		
+		<p><input type="submit" value="Envoyer" /></p>
+	</form>
+	</div>
+
+
+
+<footer id="pied-page">
+	<ul id="nav-pied-page">
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Histoire</a></li>
+			<li><a href="giffen-oeuvres.html">Auteurs</a></li>
+			<li><a href="bandes-dessinees.html">Bandes Dessinés</a></li>
+			<li><a href="personnages.html">Personnages</a></li>
+			<li><a href="#">Manga</a></li>
+			<li><a href="contact.html">Contact</a></li>
+	
+	<ul id="reseaux-sociaux">
+		<li><img src="images/facebook.png" alt="facebook" /></li>
+		<li><img src="images/twitter.png" alt="twitter" /></li>
+		<li><a title="FAQ">FAQ  |</a></li>
+		<li><a title="English">English</a></li>
+	</ul>
+	<p id="copyright">&copy; 2016 Tremel Guillaume Larocque Kevin <br /> &copy; 2016 Tremel Guillaume <br />Réalisé dans le cadre scolaire de deuxième session au collégial.</p>		
+		<img><a href="tim.cgmatane.qc.ca/etudiants/2015/tremelg/ergonomie-web//2015/raymondd-tappo"><img src="images/logoOli.png" alt="Logo Olivier" /></img>
+		<img><a href="tim.cgmatane.qc.ca/etudiants/2015/tremelg/ergonomie-web/2015/rioue-martinr"><img src="images/logoRaphEmile.png" alt="Logo Raphael" /></img>
+</footer>
+</div>   
+</body>
+</html>

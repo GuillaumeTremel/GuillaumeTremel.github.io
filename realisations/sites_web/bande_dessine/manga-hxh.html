@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Full BD Alchimie</title>
+    <meta charset="utf-8" />   
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-2.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-gt.css" />
+	
+	<script src="js/menu-script.js"></script>
+	<script src="js/jquery-2.2.3.js"></script>
+	<script src="js/menu-script.js"></script>
+	<script>
+		$(document).ready(function () {
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
+
+		});
+	</script>
+	
+
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" >
+	<link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" >
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" >
+	
+	
+	<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" >
+</head>
+<body>
+<div id="container">
+	<header>
+	<div id="banniere">
+		<h1 id="logo"><a href="index.html">Bande Dessinés</a></h1>
+			
+		 <ul id="nav-utilitaire">
+			<li><img src="images/facebook.png" alt="facebook" /></li>
+			<li><img src="images/twitter.png" alt="twitter" /></li>
+			<li><a title="FAQ">FAQ  |</a></li>
+			<li><a title="English">English</a></li>
+		</ul>
+		<form id="recherche" method="get" action="#">
+			<table>
+				<tr>
+					<td style="border-style:solid none solid solid;border-color:#4B7B9F;border-width:1px;">
+					<input type="text" name="zoom_query" style="border:0px solid; height:17px; padding:0; position:relative;" placeholder="Rechercher">
+					</td>
+					<td style="border-style:solid;border-color:#4B7B9F;border-width:1px;">
+					<input type="submit" value="" style="border-style: none; background: url('images/spotlight.jpg') no-repeat; width: 20px; height: 20px;">
+					</td>
+				</tr>
+			</table>
+		</form> 
+	</div>		
+	</header>
+
+	<nav id="nav-principale">
+		<ul>
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Histoire</a></li>
+			<li><a href="giffen-oeuvres.html">Auteurs</a></li>
+			<li><a href="bandes-dessinees.html">Bandes Dessinés</a></li>
+			<li><a href="personnages.html">Personnages</a></li>
+			<li><a href="#" id="actif">Manga</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			
+			
+		</ul>
+	</nav>
+	
+	
+	
+	<div id="cadre">
+		<div id="col-gauche" class="center">
+				<div id='cssmenu'>
+				<ul>
+				   <li class='active has-sub'><a href='#'><span>Les BD manga*</span></a>
+						<ul>
+							<li><a href='#'><span>Akame ga Kiru!</span></a></li>
+							<li><a href='#'><span>Ao no Exorcist</span></a></li>
+							<li><a href='#'><span>Berserk</span></a></li>
+							<li><a href='#'><span>Bleach</span></a></li>
+							<li><a href='#'><span>Deadman Wonderland</span></a></li>
+							<li><a href='#'><span>Dragon Ball</span></a></li>
+							<li><a href='#'><span>Fairy Tail</span></a></li>
+							<li class="active"><a href="#">Hunter x Hunter*</span></a></li>
+							<li><a href='#'><span>Naruto</span></a></li>
+							<li><a href='#'><span>Noragami</span></a></li>
+						</ul>
+					 </li>
+					 <li class='last has-sub'><a href='#'><span>Les personnages</span></a>
+					  <ul>
+							<li><a href='#'><span>Gon Freecs</span></a></li>
+							<li><a href='#'><span>Killua Zoldyck</span></a></li>
+							<li><a href='#'><span>Kurapika Kuruta</span></a></li>
+							<li><a href='#'><span>Leolio Paradinaito</span></a></li>
+							<li><a href='#'><span>Hisoka Morow</span></a></li>
+							<li><a href='#'><span>Kuroro Lucifuru</span></a></li>
+							<li><a href='#'><span>Gin Freecs</span></a></li>
+							<li><a href='#'><span>Kaito</span></a></li>
+							<li><a href='#'><span>Isaac Netero</span></a></li>
+							<li><a href='#'><span>Meruem</span></a></li>
+					  </ul>
+				   </li>
+				</ul>
+			</div>	
+			</div>
+		<div id="col-droite">
+		<div class="fil-ariane-col-droite">Vous êtes ici <a href="index.html" class="first">Accueil</a><span> &gt; </span><a>BD Manga</a><span> &gt; </span><a>Hunter x Hunter</a></div>
+			<h2> L'Énergie vitale communément appelé : Le Nen.</h2>
+			
+			<img src="images/images-gt/hxh.jpg" alt="Hunter x Hunter" class="big-image" />
+			
+			<p><strong>Nen (念, Force de l'esprit)</strong> est l'une des caractéristiques déterminantes du manga <strong>Hunter × Hunter</strong> par <strong>Yoshihiro Togashi</strong>. C'est une technique qui permet à un être vivant à utiliser et manipuler leur propre <strong>énergie de vie</strong> (connue sous le nom d'aura). Le mot <strong>"Nen"</strong> peut également être utilisé dans la conversation pour faire référence à l'aura. </p>
+			
+			<h3>Les 4 principes fondamentaux du Nen sont :</h3>
+			
+		<h3>Ten</h3>
+		<p>
+			<img src="images/images-gt/ten.png" id="ten" alt="Hunter x Hunter" />
+			<img src="images/images-gt/ten2.png" id="ten2" alt="Hunter x Hunter" />
+		</p>	
+			<p><strong>Ten(点, Point):</strong> Focus de l'esprit, réfléchir sur soi-même et déterminer l'objectif.</p>
+			<p>Une fois maintenu, il crée une enveloppe autour de l'utilisateur qui est semblable à la position dans un liquide tiède et visqueux. Ayant un linceul d'aura entourant le corps est la défense la plus élémentaire contre les attaques émotionnelles des autres utilisateurs de Nen toutefois, il ne peut pas se défendre contre les attaques physiques de Nen Le Ten maintient la vigueur juvénile et réduit le vieillissement.
+			</p>
+		<h3>Zetsu</h3>	
+			<img src="images/images-gt/zetsu.jpg" alt="Hunter x Hunter" class="little-image" align="left"/>
+			<p class="left"><strong>Zetsu (舌, Langue):</strong> Mettre en mots.</p>
+			<p class="left3">le Zetsu permet à un utilisateur d'empêcher l'aura de fuir loin de leur corps, arrêtant l'écoulement de l'aura de leur corps tout en fermant l'ensemble ses pores de l'aura, l'utilisateur est en mesure d'arrêter la quasi-totalité la sortie de son aura comme l'eau d'un robinet. Comme l'utilisateur n'est plus entouré par son aura,elle est plus sensible à l'aura des autres. Cela peut être utile lors du suivi de l'autre personne et il saura également empêcher les autres utilisateurs de Nen de le remarquer.
+			</p>
+		<h3>Ren</h3>	
+			<img src="images/images-gt/ren.jpg" alt="Hunter x Hunter" class="little-image" align="left"/>
+			<p class="left"><strong>Ren (錬, Caractère):</strong> Intensifier votre volonté.</p>
+			<p class="left3">Le Ren se concentre sur la sortie d'une grande quantité d'aura et de le garder sur le corps et l'expansion de la taille et de l'intensité de celui-ci. Si le Ten est considéré comme purement défensive, alors le Ren est typiquement ce qui est utilisé pour l'acte. Cela augmente la force et la durabilité physique de l'utilisateur et fournit une grande piscine d'aura pour toutes les techniques de pointe ou les compétences individuelles qu'ils décident d'utiliser. 
+			</p>
+		<h3>Hatsu</h3>	
+			<img src="images/images-gt/hatsu.png" alt="Hunter x Hunter" class="little-image" align="left"/>
+			<p class="left"><strong>Hatsu (発, sortie):</strong> Mettre l'action .</p>
+			<p class="left3">En essence, l'Hatsu est son expression personnelle du Nen qui crée une capacité paranormal spécial et unique (familièrement appelé une capacité Nen) Un bon Hatsu devrait refléter le propre caractère d'une personne.; on ne peut jamais vraiment maîtriser le Nen si elles ne copient que les capacités des autres. 
+			</p>
+				<br />
+			
+				
+			<ul>
+				<li><img src="images/images-gt/hatsu2.png" alt="HunterxHunter" align="left" /></li>
+				<br />
+				<ul class="left">
+					<li>-Si le volume de l'eau change, <br />l'utilisateur est du <strong>Renforcement.</strong></li><br />
+					
+					<li>-Si le goût de l'eau change, <br />l'utilisateur est de la <strong>Transformation.</strong></li><br />
+					
+					<li>-Si des impuretés apparaissent dans l'eau, <br />l'utilisateur est de la <strong>Matérialisation.</strong></li><br />
+					
+					<li>-Si la couleur de l'eau change, <br />l'utilisateur est de <strong>l'émission.</strong></li><br />
+					
+					<li>-Si la feuille se déplace sur la surface de l'eau, <br />l'utilisateur est de la <strong>Manipulation.</strong></li><br />
+					
+					<li>-Si un changement complètement différent apparaît, <br />
+					l'utilisateur est de la <strong>Spécialisation.</strong></li>
+				</ul>	
+			</ul>
+				<hr class="clearHR" />
+			<div class="scrollup">
+				<img src="images/return-top.png" alt="haut-page" title="Haut de page" />
+			</div>
+		</div>
+	</div>
+
+<footer id="pied-page">
+	<ul id="nav-pied-page">
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Histoire</a></li>
+			<li><a href="giffen-oeuvres.html">Auteurs</a></li>
+			<li><a href="bandes-dessinees.html">Bandes Dessinés</a></li>
+			<li><a href="personnages.html">Personnages</a></li>
+			<li><a href="#">Manga</a></li>
+			<li><a href="contact.html">Contact</a></li>
+	
+	<ul id="reseaux-sociaux">
+		<li><img src="images/facebook.png" alt="facebook" /></li>
+		<li><img src="images/twitter.png" alt="twitter" /></li>
+		<li><a title="FAQ">FAQ  |</a></li>
+		<li><a title="English">English</a></li>
+	</ul>
+	<p id="copyright">&copy; 2016 Tremel Guillaume Larocque Kevin <br /> &copy; 2016 Tremel Guillaume <br />Réalisé dans le cadre scolaire de deuxième session au collégial.</p>		
+		<img><a href="tim.cgmatane.qc.ca/etudiants/2015/tremelg/ergonomie-web//2015/raymondd-tappo"><img src="images/logoOli.png" alt="Logo Olivier" /></img>
+		<img><a href="tim.cgmatane.qc.ca/etudiants/2015/tremelg/ergonomie-web/2015/rioue-martinr"><img src="images/logoRaphEmile.png" alt="Logo Raphael" /></img>
+</footer>
+</div>    
+</body>
+</html>

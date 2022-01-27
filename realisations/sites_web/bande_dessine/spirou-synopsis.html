@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Full BD Alchimie</title>
+    <meta charset="utf-8" />   
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-2.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-gt.css" />
+
+	<script src="js/menu-script.js"></script>
+	<script src="js/jquery-2.2.3.js"></script>
+	<script src="js/menu-script.js"></script>
+	<script>
+		$(document).ready(function () {
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
+
+		});
+	</script>
+
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" >
+	<link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" >
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" >
+	
+	
+	<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" >
+</head>
+<body>
+<div id="container">
+	<header>
+	<div id="banniere">
+		<h1 id="logo"><a href="index.html">Bande Dessinés</a></h1>
+			
+		 <ul id="nav-utilitaire">
+			<li><img src="images/facebook.png" alt="facebook" /></li>
+			<li><img src="images/twitter.png" alt="twitter" /></li>
+			<li><a title="FAQ">FAQ  |</a></li>
+			<li><a title="English">English</a></li>
+		</ul>
+		<form id="recherche" method="get" action="#">
+			<table>
+				<tr>
+					<td style="border-style:solid none solid solid;border-color:#4B7B9F;border-width:1px;">
+					<input type="text" name="zoom_query" style="border:0px solid; height:17px; padding:0; position:relative;" placeholder="Rechercher">
+					</td>
+					<td style="border-style:solid;border-color:#4B7B9F;border-width:1px;">
+					<input type="submit" value="" style="border-style: none; background: url('images/spotlight.jpg') no-repeat; width: 20px; height: 20px;">
+					</td>
+				</tr>
+			</table>
+		</form> 
+	</div>		
+	</header>
+
+	<nav id="nav-principale">
+		<ul>
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Histoire</a></li>
+			<li><a href="giffen-oeuvres.html">Auteurs</a></li>
+			<li><a href="bandes-dessinees.html" id="actif">Bandes Dessinés</a></li>
+			<li><a href="personnages.html">Personnages</a></li>
+			<li><a href="manga-hxh.html">Manga</a></li>
+			<li><a href="contact.html">Contact</a></li> 
+			
+			
+		</ul>
+	</nav>
+	
+	
+	
+	<div id="cadre">
+		<div id="col-gauche" class="center">
+			<div id='cssmenu'>
+				<ul>
+				   <li class='has-sub'><a href='#'><span>Asterix</span></a>
+						<ul>
+							<li><a href='#'><span>Auteur</span></a></li>
+							<li><a href='#'><span>Synopsis</span></a></li>
+							<li><a href='#'><span>Personnages</span></a></li>
+							<li><a href='#'><span>Séries</span></a></li>
+							<li><a href='#'><span>Adaptation a l'écran</span></a></li>
+						</ul>
+					 </li>
+				   <li class='has-sub'><a href='#'><span>Batman</span></a>
+					  <ul>
+							<li><a href='#'><span>Auteur</span></a></li>
+							<li><a href='#'><span>Synopsis</span></a></li>
+							<li><a href='#'><span>Personnages</span></a></li>
+							<li><a href='#'><span>Séries</span></a></li>
+							<li><a href='#'><span>Adaptation a l'écran</span></a></li>
+					  </ul>
+				   </li>
+				   <li class='has-sub'><a href='#'><span>Blake &amp; Mortimer</span></a>
+						<ul>
+							<li><a href='#'><span>Auteur</span></a></li>
+							<li><a href='#'><span>Synopsis</span></a></li>
+							<li><a href='#'><span>Personnages</span></a></li>
+							<li><a href='#'><span>Séries</span></a></li>
+							<li><a href='#'><span>Adaptation a l'écran</span></a></li>
+						</ul>
+				   </li>
+				   <li><a href='#'><span>Boule et Bill</span></a>
+						
+				   </li>
+				   <li><a href='#'><span>Garfield</span></a>
+						
+				   </li>
+				   <li><a href='#'><span>Gaston</span></a>
+						
+				   </li>
+				   <li><a href='#'><span>Les Schtroumpfs</span></a>
+						
+				   </li>
+				 
+				   <li class='has-sub'><a href='#'><span>Popeye*</span></a>
+						<ul>
+							<li><a href='#'><span>Auteur</span></a></li>
+							<li><a href='#'><span>Synopsis</span></a></li>
+							<li><a href='popeye-personnages.html'><span>Personnages*</span></a></li>
+							<li><a href='#'><span>Séries</span></a></li>
+							<li><a href='#'><span>Adaptation a l'écran</span></a></li>
+						</ul>
+				   </li>
+				   <li class=' active last has-sub'><a href='#'><span>Spirou*</span></a>
+						<ul>
+							<li><a href='#'><span>Auteur</span></a></li>
+							<li class="active"><a href='spirou-synopsis.html'><span>Synopsis*</span></a></li>
+							<li><a href='#'><span>Personnages</span></a></li>
+							<li><a href='#'><span>Séries</span></a></li>
+							<li><a href='#'><span>Adaptation a l'écran</span></a></li>
+						</ul>
+				   </li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="col-droite">
+		
+		<div class="fil-ariane-col-droite">Vous êtes ici <a href="index.html" class="first">Accueil</a><span class="sep"> &gt; </span><a href="bandes-dessinees.html">Accueil-BD</a><span>  &gt; </span><a>Bande-Dessinés</a></div>
+		
+			<h2>Spirou et Fantasio / Le petit Spirou</h2>
+				
+			<img src="images/images-gt/spirou-background.jpg"  alt="spirou" />
+			
+			
+			
+			
+			<br />
+			<ul>
+				<li><img  alt="spirou" src="images/images-gt/spirou.png" align="left" /></li>
+				<p class="left">
+					<strong>Spirou et Fantasio</strong> est une série de bande dessinée publiée dans le <strong>Journal de Spirou</strong>. Sa publication a commencé en 1938 et la série est devenue l'une des bandes dessinées franco-belges les plus populaires, <strong>considérée comme un classique au même titre qu’Astérix ou Tintin</strong>. Elle met en scène les personnages de <strong>Spirou et Fantasio, reporters, accompagnés le plus souvent de l'écureuil apprivoisé de Spirou : Spip</strong>. Leurs aventures les amènent à affronter des gangsters divers et variés, ainsi que des dictateurs et autres savants fous dans des aventures mêlant humour, science-fiction et fantastique.
+				</p>
+			</ul>
+			
+			<br />
+			<img alt="petitspirou" src="images/images-gt/petitspirou.png" align="right"/>			
+			<p class="right2">
+				<strong>Le Petit Spirou</strong> est une série de bandes dessinées franco-belge, créée par <strong>Tome et Janry</strong>, racontant les exploits du Petit Spirou principalement sous forme d'histoires brèves (d'une à six pages).<strong> Tome le scénariste, et Janry le dessinateur ont d'abord imaginé le personnage en 1987</strong>, pour une courte histoire publiée dans l'album de la <strong>série classique La Jeunesse de Spirou</strong>.
+				<br />
+			</p>
+				
+		
+				<hr class="clearHR" />
+			<div class="scrollup">
+				<img src="images/return-top.png" alt="haut-page" title="Haut de page" />
+			</div>
+		</div>
+	</div>
+	
+<footer id="pied-page">
+	<ul id="nav-pied-page">
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Histoire</a></li>
+			<li><a href="giffen-oeuvres.html">Auteurs</a></li><li>
+			<li><a href="bandes-dessinees.html">Bandes Dessinés</a></li>
+			<li><a href="personnages.html">Personnages</a></li>
+			<li><a href="manga-hxh.html">Manga</a></li>
+			<li><a href="contact.html">Contact</a></li> 
+			</ul>
+	
+	<ul id="reseaux-sociaux">
+		<li><img src="images/facebook.png" alt="facebook" /></li>
+		<li><img src="images/twitter.png" alt="twitter" /></li>
+		<li><a title="FAQ">FAQ  |</a></li>
+		<li><a title="English">English</a></li>
+	</ul>
+	<p id="copyright">&copy; 2016 Tremel Guillaume Larocque Kevin <br /> &copy; 2016 Tremel Guillaume <br />Réalisé dans le cadre scolaire de deuxième session au collégial.</p>		
+		<img><a href="tim.cgmatane.qc.ca/etudiants/2015/tremelg/ergonomie-web//2015/raymondd-tappo"><img src="images/logoOli.png" alt="Logo Olivier" /></img>
+		<img><a href="tim.cgmatane.qc.ca/etudiants/2015/tremelg/ergonomie-web/2015/rioue-martinr"><img src="images/logoRaphEmile.png" alt="Logo Raphael" /></img>
+</footer>
+</div>    
+</body>
+</html>

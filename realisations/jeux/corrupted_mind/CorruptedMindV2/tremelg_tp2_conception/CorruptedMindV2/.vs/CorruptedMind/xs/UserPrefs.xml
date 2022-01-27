@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{29E316BD-1B0D-789A-0654-30CB6EE7AFDE}|">
+  <MonoDevelop.Ide.ItemProperties.CorruptedMind PreferredExecutionTarget="f68894c9-9a23-4e5e-9d46-46d6fb86bf49" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CorruptedMind" expanded="True">
+            <Node name="Assets" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

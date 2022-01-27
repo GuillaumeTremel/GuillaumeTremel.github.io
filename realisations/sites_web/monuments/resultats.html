@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Résultats-CRAZY QUIZ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-1.css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/script.js">
+	</script>
+</head>
+<body>
+<div id="conteneur">
+   	<header>
+		<img src="images/logo.png" alt="" width="350" height="300"/>
+	
+	</header>
+	
+	<nav id="nav-principale">
+	
+		<ul>
+			<li><a href="#">Accueil</a></li> 
+			<li><a href="#">BD</a></li>
+			<li><a href="#">Films &amp; Séries</a></li>
+			<li><a href="#">Jeux &amp; Consoles</a></li>
+			<li><a href="monuments.html">Monuments*</a></li>
+			<li><a href="#">Ponts</a></li>
+			<li><a href="#">Sport</a></li>
+		</ul>	
+	</nav>
+	
+	<div id="contenu">
+		<div id="infos">
+			<h2>Résultats du Quiz sur les Monuments célèbres</h2>
+			
+			<!-- affichage dynamique du nom de la date de l'heure et du pourcentage-->
+			<p>Nom : <span id="info-nom"></span></p>
+			<p>Réalisé le :<span id="info-date"></span> <span id="info-heure" ></span></p>
+			
+			<!-- ajout d'un autre paragraphe pour le résultat obtenu -->
+		
+			<p>Résultat obtenu :<span id="info-resultat"></span><br />
+				<span id="info-message"></span></p>	
+		</div>
+  
+		
+		<div id="tableau-resultats">
+			<table>
+				<tr>
+					<th>Questions</th>
+					<th>Bonnes réponses</th>
+					<th>Vos réponses</th> 
+					<th>Points</th>	
+					<th></th>
+				</tr>	
+   	
+				<tr>
+					<td>Q1</td>
+					
+					<td id="cell-bonne-rep-1"><script type="text/javascript">document.write(tabBonneRep[1]);</script></td>
+					<td id="cell-rep-util-1"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-1"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-1"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+	
+				<tr>
+					<td>Q2</td>
+					
+					<td id="cell-bonne-rep-2"><script type="text/javascript">document.write(tabBonneRep[2]);</script></td>
+					<td id="cell-rep-util-2"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-2"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-2"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+		
+				<tr>
+					<td>Q3</td>
+					
+					<td id="cell-bonne-rep-3"><script type="text/javascript">document.write(tabBonneRep[3]);</script></td>
+					<td id="cell-rep-util-3"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-3"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-3"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+				
+				<tr>
+					<td>Q4</td>
+					
+					<td id="cell-bonne-rep-4"><script type="text/javascript">document.write(tabBonneRep[4]);</script></td>
+					<td id="cell-rep-util-4"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-4"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-4"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+				
+				<tr>
+					<td>Q5</td>
+					
+					<td id="cell-bonne-rep-5"><script type="text/javascript">document.write(tabBonneRep[5]);</script></td>
+					<td id="cell-rep-util-5"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-5"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-5"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+				
+				<tr>
+					<td>Q6</td>
+					
+					<td id="cell-bonne-rep-6"><script type="text/javascript">document.write(tabBonneRep[6]);</script></td>
+					<td id="cell-rep-util-6"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-6"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-6"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+				
+				<tr>
+					<td>Q7</td>
+					
+					<td id="cell-bonne-rep-7"><script type="text/javascript">document.write(tabBonneRep[7]);</script></td>
+					<td id="cell-rep-util-7"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-7"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-7"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+				
+				<tr>
+					<td>Q8</td>
+					
+					<td id="cell-bonne-rep-8"><script type="text/javascript">document.write(tabBonneRep[8]);</script></td>
+					<td id="cell-rep-util-8"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-8"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-8" ><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+				
+				<tr>
+					<td>Q9</td>
+					
+					<td id="cell-bonne-rep-9"><script type="text/javascript">document.write(tabBonneRep[9]);</script></td>
+					<td id="cell-rep-util-9"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-9"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-9"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+				
+				<tr>
+					<td>Q10</td>
+					
+					<td id="cell-bonne-rep-10"><script type="text/javascript">document.write(tabBonneRep[10]);</script></td>
+					<td id="cell-rep-util-10"><!-- aff. dynamique de la rép de l'util. --></td>
+					<td id="cell-pts-10"><!-- aff. dynamique des points soit 0 ou 1 --></td>
+					<td id="cell-icone-10"><!-- aff. dynamique de l'image de l'icone --></td>
+				</tr>
+	
+				<tr>
+					<td id="resultats" colspan="3">Nombre de bonnes réponses</td>
+					<td id="cell-total-pts"><!-- aff. dynamique --></td>
+					<td></td>
+				</tr>
+	
+			</table>
+		</div> <!-- fin du tableau des résultats -->
+	
+       
+   	<!-- ********************** FORMULAIRE ************************************ --> 
+		<p id="confirmation" class="centre"><!-- Affichage dynamique --></p>
+		
+		<div id="formulaire">
+			<form id="form-resultats" onsubmit="return envoyerResultats()" method="post" enctype="text/plain">
+					
+					<p>
+						
+						<input type="hidden" name="nom" id="nom" value="" />
+						<input type="hidden" name="date" id="date" value="" />
+						<input type="hidden" name="heure" id="heure" value="" />
+					
+						
+						
+						<input type="hidden" id="Q1" name="Q1" value="" />
+						<input type="hidden" id="Q2" name="Q2" value="" />
+						<input type="hidden" id="Q3" name="Q3" value="" />
+						<input type="hidden" id="Q4" name="Q4" value="" />
+						<input type="hidden" id="Q5" name="Q5" value="" />
+						<input type="hidden" id="Q6" name="Q6" value="" />
+						<input type="hidden" id="Q7" name="Q7" value="" />
+						<input type="hidden" id="Q8" name="Q8" value="" />
+						<input type="hidden" id="Q9" name="Q9" value="" />
+						<input type="hidden" id="Q10" name="Q10" value="" />
+					 
+					 <input type="hidden" id="pourcentage" name="resultat"  />
+					 <input type="hidden" id="message" name="message" value="" />
+					</p>
+					
+					<p class="centre"> 
+						Destinataire: 
+						<select id="destinataire">
+							<option value="Anne-Stephanie Lebrun">Anne-Stephanie Lebrun</option>
+							<option value="Claudine Billette">Claudine Billette</option>
+							<option value="Dany Raymond">Dany Raymond</option>
+							<option value= "Guillaume Tremel" selected>Guillaume Tremel</option>
+						
+						</select>
+						
+					</p>	
+					
+					<p class="centre">
+						<input type="submit" id="envoie" value="Envoyer" />
+						<input id="btnReprendre" class="bouton" type="reset" value="Reprendre" onclick="window.location.href= 'monuments.html'" />
+						
+					
+					</p>
+			</form>
+		</div> <!-- fin div formulaire -->
+		
+	</div> 	<!-- fin contenu -->
+   
+	<footer>
+		<p id="copyright">
+				&copy; 2016 Tremel Guillaume
+				<br />
+				Réalisé dans le cadre scolaire de deuxième session au collégial
+		</p>
+	</footer>
+</div> <!-- fin conteneur -->
+<script type="text/javascript">
+	affInfos();// TRÈS TRÈS TRÈS TRÈS TRÈS TRÈS TRÈS TRÈS TRÈS IMPORTANT  SINON RIEN S'AFFICHE !!!!!!! 
+</script>
+</body>
+</html>

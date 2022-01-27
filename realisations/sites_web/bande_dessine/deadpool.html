@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Full BD Alchimie</title>
+    <meta charset="utf-8" />   
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Toutes les informations en rapport avec le personnage de Marvel: Deadpool, sont disponibles ici." />
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-2.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-gt.css" />
+	
+		<script src="js/menu-script.js"></script>
+		<script type="text/javascript" src="js/bd-gt.js"></script>
+		<script src="js/mini-quiz.js"></script>
+		<script src="js/jquery-2.2.3.js"></script>
+		<script src="js/menu-script.js"></script>
+		<script>
+			$(document).ready(function () {
+
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			});
+
+			$('.scrollup').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+
+			});
+		</script>
+	
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" >
+	<link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" >
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" >
+	
+	<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" >
+</head>
+<body onload="initQuiz()">
+<div id="container">
+	<header>
+	<div id="banniere">
+		<h1 id="logo"><a href="index.html">Bande Dessinés</a></h1>
+			
+		 <ul id="nav-utilitaire">
+			<li><img src="images/facebook.png" alt="facebook" /></li>
+			<li><img src="images/twitter.png" alt="twitter" /></li>
+			<li><a title="FAQ">FAQ  |</a></li>
+			<li><a title="English">English</a></li>
+		</ul>
+		<form id="recherche" method="get" action="#">
+			<table>
+				<tr>
+					<td style="border-style:solid none solid solid;border-color:#4B7B9F;border-width:1px;">
+					<input type="text" name="zoom_query" style="border:0px solid; height:17px; padding:0; position:relative;" placeholder="Rechercher">
+					</td>
+					<td style="border-style:solid;border-color:#4B7B9F;border-width:1px;">
+					<input type="submit" value="" style="border-style: none; background: url('images/spotlight.jpg') no-repeat; width: 20px; height: 20px;">
+					</td>
+				</tr>
+			</table>
+		</form> 
+	</div>		
+	</header>
+
+	<nav id="nav-principale">
+		<ul>
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Histoire</a></li>
+			<li><a href="giffen-oeuvres.html">Auteurs</a></li>
+			<li><a href="bandes-dessinees.html">Bandes Dessinés</a></li>
+			<li><a href="personnages.html" id="actif">Personnages</a></li>
+			<li><a href="manga-hxh.html">Manga</a></li>
+			<li><a href="contact.html">Contact</a></li> 
+			
+			
+		</ul>
+	</nav>
+	
+	
+	
+	<div id="cadre">
+		<div id="col-gauche" class="center">
+			<div id='cssmenu'>
+				<ul>
+				   <li class='has-sub'><a href='#'><span>Super-héros</span></a>
+						<ul>
+							<li><a href='#'><span>Batman</span></a></li>
+							<li><a href='#'><span>Blade</span></a></li>
+							<li><a href='#'><span>Captain America</span></a></li>
+							<li><a href='#'><span>Daredevil</span></a></li>
+							<li><a href='#'><span>Hulk</span></a></li>
+							<li><a href='#'><span>Iron Man</span></a></li>
+							<li><a href='#'><span>Spider-Man</span></a></li>
+							<li><a href='#'><span>Supergirl</span></a></li>
+							<li><a href='#'><span>Superman</span></a></li>
+							<li><a href='#'><span>Tintin</span></a></li>
+						</ul>
+					 </li>
+				   <li class='active last has-sub'><a href='#'><span>Anti-Heros*</span></a>
+					  <ul>
+							<li><a href='#'><span>Lelouch</span></a></li>
+							<li><a href='#'><span>Light</span></a></li>
+							<li><a href='spawn.html'><span>Spawn*</span></a></li>
+							<li><a href='#'><span>Itachi Uchiha</span></a></li>
+							<li class="active"><a href='#' class="actif"><span>Deadpool*</span></a></li>
+							<li><a href='#'><span>Punisher</span></a></li>
+							<li><a href='#'><span>Rorshack</span></a></li>
+							<li><a href='#'><span>Alucard</span></a></li>
+							<li><a href='#'><span>Guts</span></a></li>
+							<li><a href='#'><span>Lobo</span></a></li>
+					  </ul>
+				   </li>
+				  
+				</ul>
+			</div>
+		</div>
+		
+		<div id="col-droite" >
+		<div class="fil-ariane-col-droite">Vous êtes ici <a href="index.html" class="first">Accueil</a><span class="sep"> &gt; </span><a href="personnages.html">Personnages</a><span>  &gt; </span><a>Deadpool</a></p></div>
+			<h2>Deadpool</h2>
+			
+				<div id="divider2"></div>
+			<img src="images/images-gt/deadpool.jpg" alt="Deadpool"/>
+			<div>
+				<img align="left" alt="deadpool1" src="images/images-gt/deadpool1.png"/>
+				<p class="left"><strong>Deadpool</strong> est un personnage de fiction, un mercenaire et un antihéros appartenant à l'univers de Marvel Comics. Créé par l'artiste <strong>Rob Liefeld</strong> et le scénariste <strong>Fabian Nicieza</strong>, il apparaît pour la première fois dans le comic book New Mutants vol. 1 # 98. <br />Il est connu pour être un <strong>adversaire de l'équipe X-Force et Wolverine</strong>, comme participant au projet Arme X et pour son humour légendaire. Il a par la suite ses propres aventures dans des séries homonymes.</p>
+				
+			</div>
+			<br />
+			
+			<div>
+				<img align="right" alt="deadpool2 "src="images/images-gt/deadpool2.png"/>
+				<p class="right">
+				<strong>Deadpool</strong> possède un facteur de guérison dérivé de celui du mutant Wolverine : il peut donc régénérer des tissus endommagés par des blessures par balles et de graves brûlures en l'espace de quelques instants. Il peut aussi faire repousser ses mains ou ses yeux. Deadpool a survécu à plusieurs décapitations et est <strong>immortel grâce à la malédiction de T-RAY</strong>.
+				<strong>Sa force, son endurance et son agilité sont bien plus élevées que celles d'un humain normal.</strong>
+				</p>
+			
+				
+			</div>
+				<div id="mini-quiz">
+					<form id="formMiniQuiz" method="post">
+						<fieldset> 
+								<legend>Deadpool</legend>
+								
+								<p>Quel est l'ennemi de Deadpool connu sous le nom de Francis?</p>
+							
+							<ul>
+								<li><input name="quizGT" id="a" type="radio" value="a" onclick="repUtil = 'a'" />
+								<label id="choix-a" for="a">T-Ray</label></li>
+								
+								<li><input name="quizGT" id="b" type="radio" value="b" onclick="repUtil = 'b'" />
+								<label id="choix-b" for="b">Ajax</label></li>
+								
+								<li><input name="quizGT" id="c" type="radio" value="c" onclick="repUtil = 'c'" />
+								<label id="choix-c" for="c">La Fouine </label></li>
+											
+							</ul>
+
+							<input id="btnSubmit" type="submit" onclick="return verifierReponse('quizGT')" value="Réponse" />
+							<!-- lors du clique de la souris pour initialiser le quiz -->
+							
+							<input id="btnReset" type="reset"  onclick="initQuiz()" value="Recommencer" />	
+						</fieldset> 
+					</form>
+			
+				<div id="zone-message">
+					<img src="images/images-gt/deadpoolchibi.png" alt="deadpool-chibi" />
+					<p id="message"><!--affichage dynamique--></p>
+				</div>
+			
+				<hr class="clearHR" />	
+				<div class="scrollup">
+					<img src="images/return-top.png" alt="haut-page" title="Haut de page" />
+				</div>
+			</div>
+		</div>
+	<div>
+
+<footer id="pied-page">
+	<ul id="nav-pied-page">
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a>Histoire</a></li>
+			<li><a href="giffen-oeuvres.html">Auteurs</a></li>
+			<li><a href="bandes-dessinees.html">Bandes Dessinés</a></li>
+			<li><a href="personnages.html">Personnages</a></li>
+			<li><a href="manga-hxh.html">Manga</a></li>
+			<li><a href="contact.html">Contact</a></li> 
+	</ul>
+	
+	<ul id="reseaux-sociaux">
+		<li><img src="images/facebook.png" alt="facebook" /></li>
+		<li><img src="images/twitter.png" alt="twitter" /></li>
+		<li><a title="FAQ">FAQ  |</a></li>
+		<li><a title="English">English</a></li>
+	</ul>
+	<p id="copyright">&copy; 2016 Tremel Guillaume Larocque Kevin <br /> &copy; 2016 Tremel Guillaume <br />Réalisé dans le cadre scolaire de deuxième session au collégial.</p>		
+		<img><a href="tim.cgmatane.qc.ca/etudiants/2015/tremelg/ergonomie-web//2015/raymondd-tappo"><img src="images/logoOli.png" alt="Logo Olivier" /></img>
+		<img><a href="tim.cgmatane.qc.ca/etudiants/2015/tremelg/ergonomie-web/2015/rioue-martinr"><img src="images/logoRaphEmile.png" alt="Logo Raphael" /></img>
+</footer>
+</div>    
+</body>
+</html>

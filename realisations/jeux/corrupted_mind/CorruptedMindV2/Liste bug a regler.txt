@@ -1,0 +1,5 @@
+- empêcher d’afficher les deux affichage de fin lorsque le joueur tire tout ses ballons et que un ballon rentre dan le panier
+
+- empêcher que la musique de fond in game continue lors de game over 
+
+

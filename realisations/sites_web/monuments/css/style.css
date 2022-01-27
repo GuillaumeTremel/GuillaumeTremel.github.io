@@ -1,0 +1,345 @@
+
+* {margin: 0; padding: 0;}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #0d1c1a;
+}
+
+h1 {font-size: 200%; margin: 10px 0;}
+h2 { font-size: 150%; margin: 13px 0; }    /* 24px 150% 1.5em; */  
+h3 { font-size: 117%; margin: 16px 0; }	/* 18px (117%) */
+h4 { font-size: 100%; margin: 18px 0;}
+
+p {margin: 16px 0;}
+
+ul, ol { list-style: none; }
+
+#btnCorriger {
+  background: #64dbc7;
+  background-image: -webkit-linear-gradient(top, #64dbc7, #2c1f91);
+  background-image: -moz-linear-gradient(top, #64dbc7, #2c1f91);
+  background-image: -ms-linear-gradient(top, #64dbc7, #2c1f91);
+  background-image: -o-linear-gradient(top, #64dbc7, #2c1f91);
+  background-image: linear-gradient(to bottom, #64dbc7, #2c1f91);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 2px 1px 0px #1accc3;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#btnCorriger:hover {
+  background: #0f517a;
+  background-image: -webkit-linear-gradient(top, #0f517a, #11f0a6);
+  background-image: -moz-linear-gradient(top, #0f517a, #11f0a6);
+  background-image: -ms-linear-gradient(top, #0f517a, #11f0a6);
+  background-image: -o-linear-gradient(top, #0f517a, #11f0a6);
+  background-image: linear-gradient(to bottom, #0f517a, #11f0a6);
+  text-decoration: none;
+}
+
+#btnEffacer {
+  background: #db184f;
+  background-image: -webkit-linear-gradient(top, #db184f, #0c0073);
+  background-image: -moz-linear-gradient(top, #db184f, #0c0073);
+  background-image: -ms-linear-gradient(top, #db184f, #0c0073);
+  background-image: -o-linear-gradient(top, #db184f, #0c0073);
+  background-image: linear-gradient(to bottom, #db184f, #0c0073);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 4px 1px 0px #000000;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 7px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#btnEffacer:hover {
+  background: #0c0073;
+  background-image: -webkit-linear-gradient(top, #0c0073, #db184f);
+  background-image: -moz-linear-gradient(top, #0c0073, #db184f);
+  background-image: -ms-linear-gradient(top, #0c0073, #db184f);
+  background-image: -o-linear-gradient(top, #0c0073, #db184f);
+  background-image: linear-gradient(to bottom, #0c0073, #db184f);
+  text-decoration: none;
+}
+
+#btnEnvoyer {
+  background: #14e044;
+  background-image: -webkit-linear-gradient(top, #14e044, #1c470b);
+  background-image: -moz-linear-gradient(top, #14e044, #1c470b);
+  background-image: -ms-linear-gradient(top, #14e044, #1c470b);
+  background-image: -o-linear-gradient(top, #14e044, #1c470b);
+  background-image: linear-gradient(to bottom, #14e044, #1c470b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 4px 1px 0px #000000;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 7px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#btnEnvoyer:hover {
+  background: #1c470b;
+  background-image: -webkit-linear-gradient(top, #1c470b, #14e044);
+  background-image: -moz-linear-gradient(top, #1c470b, #14e044);
+  background-image: -ms-linear-gradient(top, #1c470b, #14e044);
+  background-image: -o-linear-gradient(top, #1c470b, #14e044);
+  background-image: linear-gradient(to bottom, #1c470b, #14e044);
+  text-decoration: none;
+}
+
+#envoie {
+  background: #14e044;
+  background-image: -webkit-linear-gradient(top, #14e044, #1c470b);
+  background-image: -moz-linear-gradient(top, #14e044, #1c470b);
+  background-image: -ms-linear-gradient(top, #14e044, #1c470b);
+  background-image: -o-linear-gradient(top, #14e044, #1c470b);
+  background-image: linear-gradient(to bottom, #14e044, #1c470b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 4px 1px 0px #000000;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 7px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#envoie:hover {
+  background: #1c470b;
+  background-image: -webkit-linear-gradient(top, #1c470b, #14e044);
+  background-image: -moz-linear-gradient(top, #1c470b, #14e044);
+  background-image: -ms-linear-gradient(top, #1c470b, #14e044);
+  background-image: -o-linear-gradient(top, #1c470b, #14e044);
+  background-image: linear-gradient(to bottom, #1c470b, #14e044);
+  text-decoration: none;
+}
+
+#btnReprendre{
+  background: #64dbc7;
+  background-image: -webkit-linear-gradient(top, #64dbc7, #2c1f91);
+  background-image: -moz-linear-gradient(top, #64dbc7, #2c1f91);
+  background-image: -ms-linear-gradient(top, #64dbc7, #2c1f91);
+  background-image: -o-linear-gradient(top, #64dbc7, #2c1f91);
+  background-image: linear-gradient(to bottom, #64dbc7, #2c1f91);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 2px 1px 0px #1accc3;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  
+	
+}
+
+#btnReprendre:hover {
+   background: #0f517a;
+  background-image: -webkit-linear-gradient(top, #0f517a, #11f0a6);
+  background-image: -moz-linear-gradient(top, #0f517a, #11f0a6);
+  background-image: -ms-linear-gradient(top, #0f517a, #11f0a6);
+  background-image: -o-linear-gradient(top, #0f517a, #11f0a6);
+  background-image: linear-gradient(to bottom, #0f517a, #11f0a6);
+  text-decoration: none;
+}
+
+
+
+
+ol.question {
+	list-style-type: decimal;
+	padding-left: 30px;
+	margin-top: 30px;
+}
+ /* > li , prend seulement le li du dessous de la question */
+ol.question > li {
+	margin-bottom: 50px;
+	/*border: 2px solid pink; */
+}
+
+ol.choix{
+	list-style-type: lower-latin;
+	padding-left: 30px;
+	line-height: 1.5;
+}
+
+
+ol.choix li {
+	width: 320px; /* s'ajuste selon la longueur des choix */
+/*	border: 1px solid green; */
+}
+
+
+
+
+#conteneur {
+	margin: 0 auto;
+	width: 960px;
+	border: 1px solid #333;
+	background-color: #e6e6e6;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 416px;
+	background: url(../images/wallpaper.jpg);
+	
+}
+
+/********** NAVIGATION PRINCIPALE ***********/
+#nav-principale {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #009380;
+}
+
+#nav-principale li {
+	display: inline;		
+	padding-left: 25px;
+	padding-right: 35px;
+}
+
+#nav-principale a {
+	font-size: 110%; 
+	color: #fff;
+	line-height: 50px;
+	text-decoration: none;
+	outline: none;
+}
+#nav-principale a:hover,#nav-principale a#actif {
+	text-decoration: underline;
+	color: #FF0000;
+}
+
+/****************** CONTENU ******************/
+#contenu {
+	padding: 20px;	/* tout dépend des largeurs des questions */
+	/* border: 2px solid brown; */
+}
+
+/************** FORMULAIRE ********************/
+/* #form1 {border: 1px solid pink;} */
+#form1 section-nom {
+	padding-left: 30px;
+	margin-top: 30px;
+
+}
+#section-nom {
+	padding-left: 10px;
+}
+
+#erreurNom{
+	padding-left: 60px;
+}
+/* ici , placer le nom et le msg d'erreur aligné avec les numéros */
+#form1 div.img-droite {
+	float: right;
+	width: 350px;
+	height: auto;
+	margin-right: 10px;
+	margin-bottom: 50px; /* permet de descendre la question suivante */
+	text-align: right;
+	
+
+	/*border: 1px solid red;*/
+}
+
+
+/******************* CODE EFFET IMG **************/
+.ImgAgrandissement{
+	position: relative;
+	z-index: 5;
+	-moz-transition: all .5s cubic-bezier(.6, 2, .4, 1);
+	-webkit-transition: all .5s cubic-bezier(.6, 2, .4, 1);
+	-o-transition: all .5s cubic-bezier(.6, 2, .4, 1);
+	-ms-transition: all .5s cubic-bezier(.6, 2, .4, 1);
+	transition: all .5s cubic-bezier(.6, 2, .4, 1);
+	
+
+}
+
+.ImgAgrandissement:hover {
+	
+	-moz-transform: scale(1.15);
+	-webkit-transition: scale(1.15);
+	-o-transition: scale(1.15);
+	-ms-transition: scale(1.15);
+	transition: scale(1.15);
+	z-index: 5;
+	
+}
+/********************************************
+				RÉSULTATS
+********************************************/					
+#infos{
+	margin-bottom: 30px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+#tableau-resultats {text-align: center;}
+
+#tableau-resultats table {
+	width: 500px;
+	border: 1px solid #000;
+	margin: auto;
+	background-color: #fff;
+	
+}
+
+
+#tableau-resultats td, th {
+	text-align: center;
+	border: 0.5px solid #000;
+	padding: 10px;
+}
+
+#resultats {
+	text-align: right !important;
+	padding: 10px;
+}
+
+/*************** FOOTER **********/
+/*************** FOOTER **********/
+
+footer {
+	background-color: #046155;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+}
+
+/**************** LES CLASSES ***************/
+
+.centre {
+	padding-left: 321px;
+}
+
+.erreur {
+	font-family: Arial;
+   	font-size: 10px;
+   	color: #F00;  /* rouge */
+}
+
+
+
+.floatstop{clear: both;}
+
+
+

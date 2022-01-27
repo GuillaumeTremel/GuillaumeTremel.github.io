@@ -1,0 +1,246 @@
+/*<body style="background-image:url(images/images_fond/img_fond.gif)">*/
+
+
+
+* {
+	margin: 0 ;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+h2 { font-size: 16px; margin: 13px 0; color: #769218;}     
+h3 { font-size: 18px; margin: 16px 0; }	
+h4 { font-size: 16px; margin: 18px 0;}
+h5 { font-size: 28px; margin: 13px 0; }   
+
+p {margin: 16px 0; }
+
+
+ol, ul { list-style: none; }
+
+body{
+	width: 1902px;
+	background-color: #D8D8D8;
+}
+
+h2 {
+	padding-right: 380px;  
+}
+
+
+h5{
+	text-align: center;  
+}
+
+
+
+/***conteneur***/
+#container {
+	position: relative;
+	width: 1902px;
+	margin: 0 auto;
+	font-family: Arial,Helvectica,sans-serif;
+}
+/***contenu***/
+#contenu {
+	position: relative;
+	width: 1902px;
+	background-color: #fff;
+}
+
+#contenu2 {
+	position: relative;
+	width: 1902px;
+	height: 750px;
+	background-color: #223253;
+}
+
+/*** BANNIERE ***/
+#banniere{
+	position: relative;
+	height: 287px;
+	margin: 0 auto;
+	background:url(../images/banniere.jpg)no-repeat;
+}
+
+#banniere3{
+	position: relative;
+	width: 1902px;
+	height: 287px;
+	margin: auto;
+	background:url(../images/banniere3.jpg)no-repeat;
+}
+
+#banniere4{
+	position: relative;
+	width: 1902px;
+	height: 287px;
+	margin: auto;
+	background:url(../images/banniere2.0.jpg)no-repeat;
+}
+/*** LOGO ***/
+#logo {
+	position: absolute;
+	margin-left: 100px;
+	width: 700px;
+	height: 203px;
+	background-image: url(../images/logo.png);
+	text-indent: -9999px;
+	z-index: 10;
+}
+
+#logo a{
+	position: absolute;
+	top: 200;
+	outline: none;
+}
+
+
+/***NAV-PRINCIPALE***/	
+#nav-principale {
+	position: relative;
+	height: 50px;  
+	background-color: #fff;
+}
+
+nav#nav-principale {
+	text-align: center;
+	width: 1902px;
+	height: 75px;
+}
+
+
+#nav-principale li {
+	display: inline;		
+	padding-left: 150px;
+	padding-right: 150px;
+	text-align: center;
+}
+
+#nav-principale li:first-child {
+	padding-right: 150px;
+}
+
+#nav-principale a {
+	font-size: 140%; 
+	font-weight: bold;
+	color: #444444;
+	line-height: 50px;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#nav-principale a:hover {
+	color: #034b71;
+}
+
+#nav-principale a#actif {
+	color: #046ca3;
+}
+
+
+
+
+.row {
+	display: inline-block;
+	box-shadow: 5px 5px 2px #888888;
+}
+
+#nav-pied-page li {
+	display: inline;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 90%; 
+}
+
+#nav-pied-page li a{
+	color: #fff;  
+	text-decoration: none;
+}
+
+#nav-pied-page li a:hover {
+
+	color: #2b8f8d;
+	cursor: pointer;
+}
+
+
+#pied-page {
+	/*margin: 0 auto;*/
+	padding: 30px 0;
+    position: relative;
+	background: #000;
+	text-align: center;
+	font-weight: bold;
+	
+	text-decoration: none;
+	height: 287px;
+	margin: auto;
+	background:url(../images/banniere2.jpg)no-repeat;
+}
+
+#nav-pied-page {margin-bottom: 20px;}
+
+#nav-pied-page, #reseaux-sociaux {margin-bottom: 30px;}
+
+s{
+	margin-left: 200px;
+}
+
+#pied-page a {
+	font-size: 140%; 
+	font-weight: bold;
+	color: #fff;
+	line-height: 50px;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#pied-page a:hover {
+
+	color: #2E8B57;
+	cursor: pointer;
+}
+
+
+#pied-page p {
+    font-size: 90%; 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#copyright{
+	padding-top: 50px;
+	color: #fff;
+}
+
+/***CLEARHR***/
+.clearHR {
+	clear: both;
+	margin: 0;
+	visibility: hidden;
+}
+
+
+
+
+.center {
+		padding-left: 287px;
+	}
+
+.center3{
+	
+	text-align: center;
+	
+	margin-right: 300px;
+	}
+
+.centre4{
+	
+	text-align: center;
+	padding-right: 40px;
+	}

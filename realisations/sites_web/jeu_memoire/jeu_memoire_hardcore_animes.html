@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>JEU DE MÉMOIRE</title>
+    <meta charset="utf-8" />
+	<meta name="robots" content="index, follow">	
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-2.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-gt.css" />
+	<link href="styles/ihover.css" rel="stylesheet">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/scriptmemoire3.js"></script>
+	
+	<script src="js/jquery-2.2.3.js"></script>
+	<script>
+		$(document).ready(function () {
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
+
+		});
+	</script>
+	
+	
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" >
+	<link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" >
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" >
+	
+	<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" >
+	
+</head>
+<body onload="initialiserJeu()" style="background-image:url(images/images_fond/img_fond_memoire.jpg)">
+<div id="container">
+	<header>
+	<div id="banniere">
+		<script type="text/javascript">
+			affBanniere();
+		</script>	
+	</div>		
+	</header>
+
+	<nav id="nav-principale">
+		<ul>
+		</ul>
+	</nav>
+	<div id="contenu">
+		
+		</br></br>
+		<h5>Jeu de Mémoire</h5>
+		
+		<div id="main-wrapper">  <!-- ou main-container / conteneur -->
+			
+			<br/><br/>
+			<div id="wrapper-jeu" >
+				<div id="container-jeu2">
+					<div id="zone-img-jeu" >
+						<p>
+							<!-- mettre des alt vides, car les images seront mélangées et pas de title -->
+							<img class="zoom-effet1" id="image0" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(0)" />
+							<img class="zoom-effet1" id="image1" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(1)" />
+							<img class="zoom-effet1"  id="image2" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(2)" />
+							<img class="zoom-effet1" id="image3" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(3)" />
+							<img class="zoom-effet1" id="image4" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(4)" />
+							<img class="zoom-effet1"  id="image5" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(5)" />
+							<img class="zoom-effet1" id="image6" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(6)" />
+							<img class="zoom-effet1" id="image7" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(7)" />
+							<img class="zoom-effet1"  id="image8" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(8)" />
+							<img class="zoom-effet1" id="image9" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(9)" />
+							<img class="zoom-effet1" id="image10" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(10)" />
+							<img class="zoom-effet1"  id="image11" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(11)" />
+							<img class="zoom-effet1"  id="image12" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(12)" />
+							<img class="zoom-effet1" id="image13" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(13)" />
+							<img class="zoom-effet1" id="image14" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(14)" />
+							<img class="zoom-effet1"  id="image15" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(15)" />
+							<img class="zoom-effet1" id="image16" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(16)" />
+							<img class="zoom-effet1"  id="image17" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(17)" />
+							<img class="zoom-effet1"  id="image18" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(18)" />
+							<img class="zoom-effet1"  id="image19" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(19)" />
+							<img class="zoom-effet1"  id="image20" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(20)" />
+							<img class="zoom-effet1" id="image21" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(21)" />
+							<img class="zoom-effet1" id="image22" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(22)" />
+							<img class="zoom-effet1"  id="image23" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(23)" />
+							<img class="zoom-effet1"  id="image24" alt="" src="images/jeu-memoire/dessus.jpg" onclick="choixImage(24)" />
+						</p>
+					</div>
+				
+					<div id="zone-msg">
+						<p>Nombre d'essai(s) : <span id="nbreEssais"><!-- aff dynamique --></span></p>
+						<p><span id="fin"><!-- affichage dynamique --></span> <span id="message"><!-- affichage dynamique --></span></p>	
+					</div>
+				
+					<div id="btnJeu">
+						<p>
+							<!-- par contre, ici vous devez mettre un alt -->
+							<!-- utiliser la même classe que précédemment pour changer le curseur -->
+							<img alt="bouton rechercher" class="changeCurseur" src="images/jeu-memoire/btnRechercher.jpg" onclick="affRecherche()" /> 
+							
+							<img id="btnDebuter" class="changeCurseur" alt="Débuter" src="images/btnDebuter.jpg" onclick="debuterJeu()" onmouseup="this.src='images/jeu-memoire/btnDebuter.jpg'" />
+							
+							<br/><br/>
+							<br/><br/>
+							
+							<input id="btnFacile" type="submit" value="F A C I L E " onclick="window.location.href= 'jeu_memoire_facile_animes.html '" />
+							<br/><br/>
+							
+							<input id="btnIntermediaire" type="submit" value="I N T E R M E D I A I R E" onclick="window.location.href= 'jeu_memoire_intermediaire_animes.html '"/>
+							<br/><br/>
+							
+							<input id="btnHardcore" type="submit" value="H A R D C O R E" />
+						</p>
+					</div>
+				</div> <!-- fin container-jeu2 -->
+			
+				<div id="container-rechercher">
+					<h3>Recherché</h3>
+				
+					<p><img id="inconnu" class="zoom-effet1" src="images/jeu-memoire/inconnu.jpg" alt="inconnu" /></p>
+					<!-- faire une classe pour changer le curseur -->
+					
+					
+					<!-- ici vous aurez les règles du jeu, incluant un sous-tite  -->
+					<h3>Règles du jeu</h3>
+					<ol>
+						<li>- Cliquez sur <strong>"Rechercher"</strong> pour savoir quelle carte est recherchée</li>
+						<br/>
+						<li>- Cliquez sur <strong>"Débuter"</strong> et commencez à chercher la carte.</li>
+						<br/>
+						<li>- Essayez de trouver la carte le plus rapidement possible.</li>
+
+					
+					</ol>
+				</div>	<!-- fin container-rechercher -->
+			</div>  <!-- fin wrapper-jeu -->	
+</div> <!-- fin conteneur -->
+				
+			<div class="scrollup">
+				<img src="images/return-top.png" alt="haut-page" title="Haut de page" />
+			</div>
+	</div>
+	
+	<footer id="pied-page">
+		<ul id="nav-pied-page">
+				</ul>
+		<p id="copyright">© 2018 Guillaume Tremel Portfolio</p>
+			
+		
+	</footer>
+</div>    
+</body>
+</html>

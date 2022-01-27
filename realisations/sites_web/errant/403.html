@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <title>Hybrid - Errant</title>
+    <meta charset="utf-8" />
+	<meta name="robots" content="index, follow">	
+	<link rel="stylesheet" type="text/css" href="css/normalize-v3-0-2.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/style-gt.css" />
+	
+	
+	<link href="styles/ihover.css" rel="stylesheet">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/jquery-2.2.3.js"></script>
+	<script>
+		$(document).ready(function () {
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+		});
+
+		$('.scrollup').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
+
+		});
+	</script>
+	
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="images/x-icon" >
+	
+	
+</head>
+<body>
+<div id="container">
+	<header>
+	
+	<div id="banniere">
+			
+		
+	</div>		
+	</header>
+
+	<nav id="nav-principale">
+		<ul>
+			<li><a href="index.html">Accueil</a></li> 
+			<li><a href="notre_equipe.html" >Notre équipe</a></li>
+			<li><a href="jeu.html">Jeu</a></li>
+			<li><a href="en_savoir_plus.html">En savoir plus</a></li>
+		</ul>
+	</nav>
+	<div id="contenu">
+		
+	<div style="display: inline-block;">
+	
+	
+	<img src="images/403.png" />
+		
+			
+	</div>
+				
+			<hr class="clearHR" />
+			<div class="scrollup">
+				<img src="images/return-top.png" alt="haut-page" title="Haut de page" />
+			</div>
+	</div>
+	
+	<footer id="pied-page">
+		<ul id="nav-pied-page">
+			<li><a href="#" id="actif">Accueil</a></li> 
+			<li><a href="notre_equipe.html" >Notre équipe</a></li>
+			<li><a href="jeu.html">Jeu</a></li>
+			<li><a href="en_savoir_plus.html">En savoir plus</a></li>
+				</ul>
+		<p id="copyright">&copy; 2017 Hybrid Entreprise <br />Réalisé lors du WebJam 2017 au Cégep de Matane</p>
+			
+		
+	</footer>
+</div>    
+</body>
+</html>
